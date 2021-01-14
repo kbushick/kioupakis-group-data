@@ -1,4 +1,4 @@
-#BAs Band Structure Data
+# BAs Band Structure Data
 This subfolder contains the raw data used to plot the band structure of BAs. The full lists of points and energies along high symmetry paths are available are present in the files starting with pz. Four sets of data are provided, corresponding to the four band structures presented in the paper. Two are computed with LDA, while two are computed using GW. Of each of these pairs, one does not include spin-orbit coupling and one does (denotes "so"). 
 
 The python script used to generate the band structure reads each band separately, so a helper bash file `split_bands.sh` is also provided to separate out the full data files into individual band files. These are moved to their corresponding subdirectories: lda, lda_so, gw, and gw_so for clarity. 
