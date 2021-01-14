@@ -1,0 +1,4 @@
+# BAs GW BSE Data
+This subfolder contains the raw data used to plot the imaginary part of the dielectric function. The two raw data files: `absorption_eh_18.dat` and `absorption_noeh_18.dat` are obtained from the BSE method implemented in BerkeleyGW. The code outputs data both with (eh) and without (noeh) excitonic effects considered. The helper bash script `process_abs.sh` cleans and combines these two data files into one file `abs_18.dat` which is read by `plot_absorption_BAs.py` to create the plot, which is Figure 2 in the paper. 
+
+The high-frequency dielectric constant is obtained from BerkeleyGW's epsilon.x code. The output is entitled `07-epsilon_output` and 1/Head of Epsilon Inverse from the first q-point gives the desired quantity, epsilon\_infinity. This value also informs the exciton binding energy (through the Bohr model) as well as the refractive index.
