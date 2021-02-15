@@ -1,0 +1,51 @@
+&control
+   prefix = 'BAs'
+   calculation = 'scf'
+   restart_mode = 'from_scratch'
+   wf_collect = .true.
+   tstress = .true.
+   tprnfor = .true.
+   outdir = './'
+   wfcdir = './wfc'
+   pseudo_dir = './'
+   verbosity = 'high'
+/
+&system
+   ibrav = 0
+   !dft relaxed
+   celldm(1) = 8.9562049655
+   nat = 2
+   ntyp = 2
+   nbnd = 24  
+   ecutwfc = 50.0
+/
+&electrons
+   electron_maxstep = 500
+   conv_thr = 1.0d-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+/
+&ions
+/
+&cell
+/
+ATOMIC_SPECIES
+   B  10.810   B.cpi.UPF
+   As  74.922   As.cpi.UPF
+
+CELL_PARAMETERS (alat)
+-0.505 0.0 0.497418 
+0.0 0.505 0.497418
+-0.505 0.505 0.0
+
+ATOMIC_POSITIONS crystal
+As 0.0 0.0 0.0
+B 0.25 0.25 0.25
+
+K_POINTS automatic
+12 12 12 0 0 0 
+

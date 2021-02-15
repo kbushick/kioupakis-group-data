@@ -1,0 +1,38 @@
+
+     Program FERMI v.6.4rc starts on 26Aug2019 at 16:56:20 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PZ ( 1  1  0  0 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file B.cpi.UPF: wavefunction(s)  2s 2p 3d renormalized
+               file As.cpi.UPF: wavefunction(s)  4s 4p 4d renormalized
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         559     559    169                 8609     8609    1471
+
+        5 bands found crossing Ef =    0.000000
+
+     FERMI        :      2.15s CPU      2.16s WALL
+
+
+   This run was terminated on:  16:56:23  26Aug2019            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

@@ -1,0 +1,6 @@
+ &fermi
+     outdir='./'
+     prefix='BAs'
+     deltaE=10.0
+ /
+

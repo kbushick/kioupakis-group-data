@@ -1,0 +1,98 @@
+--
+&inputepw
+  prefix      = 'BAs',
+  amass(1)    = 10.810,
+  amass(2)    = 74.922,
+  outdir      = './'
+
+  lpolar      = .true.
+
+  elph        = .true.
+  kmaps       = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+
+  !eig_read = .true.
+  
+  nbndsub     =  8
+!  nbndskip    =  16
+
+  lifc	      =	 .true.
+  asr_typ     =  'simple'
+  vme = .true. 
+ 
+  elecselfen = .false.
+  phonselfen = .false.
+  a2f = .false.
+
+  scattering = .true.
+  scattering_serta = .true. 
+  int_mob = .true.
+  carrier = .true. 
+  ncarrier = 1e18
+
+  mp_mesh_k = .true.
+
+  restart = .true.
+  restart_freq = 500
+  
+  nstemp = 1
+  tempsmin = 300
+  tempsmax = 300
+
+  efermi_read = .true.
+  !fermi_energy = 8.9 
+  !fermi_energy = 8.4 
+  fermi_energy = 9.175 !!NEED to change following plot CBM=9.71, VBM=8.64 - avg=9.175, .535=dist from center to edge
+
+!  parallel_k = .true.
+!  parallel_q = .false.
+
+  fsthick     = 0.84 ! eV !!NEED to change, maybe?
+  !fsthick     = 1.3 ! eV
+  !fsthick     = 3.0  ! eV
+  eptemp      = 300.0 ! K
+  degaussw    = 0.01 ! eV
+
+  dvscf_dir   = './save'
+  
+!  band_plot   = .true.
+!  filkf	      = './kpoints.txt'
+
+  nkf1        = 120
+  nkf2        = 120
+  nkf3        = 120
+  nqf1        = 120
+  nqf2        = 120
+  nqf3        = 120
+  
+  nk1         = 6
+  nk2         = 6
+  nk3         = 6
+  nq1         = 6
+  nq2         = 6
+  nq3         = 6
+
+  iverbosity  = 1
+
+ /
+  16 cartesian
+   0.000000000000000E+00   0.000000000000000E+00   0.000000000000000E+00  0.0625
+  -0.166666666666667E+00   0.166666666666667E+00  -0.166666666666667E+00  0.0625
+  -0.333333333333333E+00   0.333333333333333E+00  -0.333333333333333E+00  0.0625
+   0.500000000000000E+00  -0.500000000000000E+00   0.500000000000000E+00  0.0625
+   0.000000000000000E+00   0.333333333333333E+00   0.000000000000000E+00  0.0625
+  -0.166666666666667E+00   0.500000000000000E+00  -0.166666666666667E+00  0.0625
+   0.666666666666667E+00  -0.333333333333333E+00   0.666666666666667E+00  0.0625
+   0.500000000000000E+00  -0.166666666666667E+00   0.500000000000000E+00  0.0625
+   0.333333333333333E+00   0.277555756156289E-16   0.333333333333333E+00  0.0625
+   0.000000000000000E+00   0.666666666666667E+00   0.000000000000000E+00  0.0625
+   0.833333333333333E+00  -0.166666666666667E+00   0.833333333333333E+00  0.0625
+   0.666666666666667E+00  -0.555111512312578E-16   0.666666666666667E+00  0.0625
+   0.000000000000000E+00  -0.100000000000000E+01   0.000000000000000E+00  0.0625
+   0.666666666666667E+00  -0.333333333333333E+00   0.100000000000000E+01  0.0625
+   0.500000000000000E+00  -0.166666666666667E+00   0.833333333333333E+00  0.0625
+  -0.333333333333333E+00  -0.100000000000000E+01   0.000000000000000E+00  0.0625

@@ -1,0 +1,2 @@
+# BAs Conduciton Band Isosurfaces
+This subfolder contains the raw data used to calculate the conduction band isosurfaces. We use Quantum ESPRESSO and xcrysden to generate the data and the plot, respectively. We do this for both the unstrained and strained structure, corresponding to the two subfolders. The scf, nscf, and fs input and output (run in that order) are included. The fs run (using the fs.x executable) produces a datafile that is readable by xcrysden, which is used to make the plots found in Figure 3. 
