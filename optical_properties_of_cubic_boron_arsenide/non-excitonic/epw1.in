@@ -1,0 +1,90 @@
+--
+&inputepw
+  prefix      = 'BAs',
+  amass(1)    = 10.810,
+  amass(2)    = 74.922,
+  outdir      = './'
+
+  lpolar      = .true.
+
+  elph        = .true.
+  kmaps       = .false.
+  epbwrite    = .true.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  
+  eig_read    = .true.
+
+  nbndsub     =  8
+!  nbndskip    =  16
+
+  lifc	      =	 .true.
+  asr_typ     =  'simple'
+  vme         = .true.
+
+  wannierize   = .true.
+  dis_win_max  =  60.0d0
+  dis_froz_max =  14.0d0
+  dis_win_min  =  -10.0d0
+  dis_froz_min =  -10.0d0
+  num_iter     =  2000
+  iprint       = 2
+  proj(1)      = 'B:sp3'
+  proj(2)      = 'As:sp3'
+  wdata(1)  =	'bands_plot = .true.'
+  wdata(2)  =	'begin kpoint_path'
+  wdata(3)  =	'G 0.000 0.000 0.000 X 0.500 0.000 0.500'
+  wdata(4)  =	'X 0.500 0.000 0.500 W 0.500 0.250 0.750'
+  wdata(5)  =	'W 0.500 0.250 0.750 K 0.375 0.375 0.750'
+  wdata(6)  =	'K 0.375 0.375 0.750 G 0.000 0.000 0.000'
+  wdata(7)  =	'G 0.000 0.000 0.000 L 0.500 0.500 0.500'
+  wdata(8)  =	'L 0.500 0.500 0.500 U 0.625 0.250 0.625'
+  wdata(9)  =	'U 0.625 0.250 0.625 W 0.500 0.250 0.750'
+  wdata(10)  =	'W 0.500 0.250 0.750 L 0.500 0.500 0.500'
+  wdata(11)  =	'L 0.500 0.500 0.500 K 0.375 0.375 0.750'
+  wdata(12)  =	'U 0.625 0.250 0.625 X 0.500 0.000 0.500'
+  wdata(13)  =	'end kpoint_path'
+  wdata(14)  =	'bands_plot_format = gnuplot'
+  wdata(15)  =	'dis_num_iter	   = 20000'
+  wdata(16)  =	'num_print_cycles  = 100'
+  wdata(17)  =	'dis_mix_ratio	   = 0.8'
+  wdata(18)  =	'use_ws_distance   = T'
+  wdata(19)  = 'write_bvec = .true.'
+!  wdata(18)  =	'use_ws_distance   = F'
+
+  iverbosity  = 1
+
+  elecselfen	= .false.
+  phonselfen	= .false.
+  a2f		= .false.
+
+  dvscf_dir   = './save'
+  
+!  band_plot   = .true.
+!  filkf	      = './kpoints.txt'
+  nkf1        = 8
+  nkf2        = 8
+  nkf3        = 8
+  nqf1        = 4
+  nqf2        = 4
+  nqf3        = 4
+  
+  nk1         = 8
+  nk2         = 8
+  nk3         = 8
+  nq1         = 4
+  nq2         = 4
+  nq3         = 4
+ /
+  8 cartesian
+   0.000000000000000E+00   0.000000000000000E+00   0.000000000000000E+00 0.125E+00 
+  -0.250000000000000E+00   0.250000000000000E+00  -0.250000000000000E+00 0.125E+00
+   0.500000000000000E+00  -0.500000000000000E+00   0.500000000000000E+00 0.125E+00
+   0.000000000000000E+00   0.500000000000000E+00   0.000000000000000E+00 0.125E+00
+   0.750000000000000E+00  -0.250000000000000E+00   0.750000000000000E+00 0.125E+00
+   0.500000000000000E+00   0.000000000000000E+00   0.500000000000000E+00 0.125E+00
+   0.000000000000000E+00  -0.100000000000000E+01   0.000000000000000E+00 0.125E+00
+  -0.500000000000000E+00  -0.100000000000000E+01   0.000000000000000E+00 0.125E+00
+
