@@ -1,2 +1,2 @@
-# BAs Psuedopotential Files
-The UPF psuedo files are used for the LDA calculations. 
+# BAs Pseudopotential Files
+The UPF pseudo files are used for the LDA calculations. 
