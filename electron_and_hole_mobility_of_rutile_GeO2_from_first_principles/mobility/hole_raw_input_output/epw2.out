@@ -1,0 +1,1397 @@
+                                                                                      
+                                       ``:oss/                                        
+                           `.+s+.     .+ys--yh+     `./ss+.                           
+                          -sh//yy+`   +yy   +yy    -+h+-oyy                           
+                          -yh- .oyy/.-sh.   .syo-.:sy-  /yh                           
+                 `.-.`    `yh+   -oyyyo.     `/syys:    oys      `.`                  
+               `/+ssys+-` `sh+      `                   oys`   .:osyo`                
+               -yh- ./syyooyo`                          .sys+/oyo--yh/                
+               `yy+    .-:-.                             `-/+/:`  -sh-                
+                /yh.                                              oys                 
+          ``..---hho---------`   .---------..`      `.-----.`    -hd+---.             
+       `./osmNMMMMMMMMMMMMMMMs. +NNMMMMMMMMNNmh+.   yNMMMMMNm-  oNMMMMMNmo++:`        
+       +sy--/sdMMMhyyyyyyyNMMh- .oyNMMmyyyyyhNMMm+` -yMMMdyyo:` .oyyNMMNhs+syy`       
+       -yy/   /MMM+.`-+/``mMMy-   `mMMh:`````.dMMN:` `MMMy-`-dhhy```mMMy:``+hs        
+        -yy+` /MMMo:-mMM+`-oo/.    mMMh:     `dMMN/`  dMMm:`dMMMMy..MMMo-.+yo`        
+         .sys`/MMMMNNMMMs-         mMMmyooooymMMNo:   oMMM/sMMMMMM++MMN//oh:          
+          `sh+/MMMhyyMMMs- `-`     mMMMMMMMMMNmy+-`   -MMMhMMMsmMMmdMMd/yy+           
+    `-/+++oyy-/MMM+.`/hh/.`mNm:`   mMMd+/////:-.`      NMMMMMd/:NMMMMMy:/yyo/:.`      
+   +os+//:-..-oMMMo:--:::-/MMMo. .-mMMd+---`           hMMMMN+. oMMMMMo. `-+osyso:`   
+   syo     `mNMMMMMNNNNNNNNMMMo.oNNMMMMMNNNN:`         +MMMMs:`  dMMMN/`     ``:syo   
+   /yh`     :syyyyyyyyyyyyyyyy+.`+syyyyyyyyo:`         .oyys:`   .oyys:`        +yh   
+   -yh-        ````````````````    `````````              ``        ``          oys   
+   -+h/------------------------::::::::://////++++++++++++++++++++++///////::::/yd:   
+   shdddddddddddddddddddddddddddddhhhhhhhhyyyyyssssssssssssssssyyyyyyyhhhhhhhddddh`   
+                                                                                      
+  S. Ponce, E. R. Margine, C. Verdi, and F. Giustino,                                 
+                                                Comput. Phys. Commun. 209, 116 (2016) 
+                                                                                      
+
+     Program EPW v.5.3.0 starts on  8Aug2020 at 21:57:26 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on    1836 processor cores
+     Number of MPI processes:              1836
+     Threads/MPI process:                     1
+
+     MPI processes distributed on    27 nodes
+     K-points division:     npool     =    1836
+     Fft bands division:     nmany     =       1
+
+     WARNING: The specified dis_win_min is ignored.
+              You should instead use bands_skipped = 'exclude_bands = ...'
+              to control the lower bound of band manifold.
+
+     Generating evenly spaced temperature list.
+                      
+     ------------------------------------------------------------------------ 
+                   RESTART - RESTART - RESTART - RESTART                         
+     Restart is done without reading PWSCF save file.                  
+     Be aware that some consistency checks are therefore not done.                  
+     ------------------------------------------------------------------------ 
+                      
+
+     --                                                                         
+
+     bravais-lattice index     =            0
+     lattice parameter (a_0)   =       0.0000  a.u.
+     unit-cell volume          =       0.0000 (a.u.)^3
+     number of atoms/cell      =            0
+     number of atomic types    =            0
+     kinetic-energy cut-off    =       0.0000  Ry
+     charge density cut-off    =       0.0000  Ry
+     Exchange-correlation= not set
+                           (  -1  -1  -1  -1  -1  -1  -1)
+
+
+     celldm(1)=    0.00000  celldm(2)=    0.00000  celldm(3)=    0.00000
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of a_0)
+               a(1) = (  0.0000  0.0000  0.0000 )  
+               a(2) = (  0.0000  0.0000  0.0000 )  
+               a(3) = (  0.0000  0.0000  0.0000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/a_0)
+               b(1) = (  0.0000  0.0000  0.0000 )  
+               b(2) = (  0.0000  0.0000  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0000 )  
+
+
+     Atoms inside the unit cell: 
+
+   Cartesian axes
+
+     site n.  atom      mass           positions (a_0 units)
+
+ 
+     No symmetry!
+
+     G cutoff =    0.0000  (      0 G-vectors)     FFT grid: (  0,  0,  0)
+     number of k points=    0
+                       cart. coord. in units 2pi/a_0
+     EPW          :      0.04s CPU      0.08s WALL
+
+     EPW          :      0.04s CPU      0.08s WALL
+
+
+     -------------------------------------------------------------------
+     Using GeO2.ukk from disk
+     -------------------------------------------------------------------
+
+     Reading external electronic eigenvalues (    0,    0)
+
+     Do not need to read .epb files; read .fmt files
+
+
+     Band disentanglement is used: nbndsub =   24
+
+     Computes the analytic long-range interaction for polar materials [lpolar]
+      
+     Construct the Wigner-Seitz cell using Wannier centers and atomic positions 
+     Number of WS vectors for electrons      175
+     Number of WS vectors for phonons      175
+     Number of WS vectors for electron-phonon      175
+     Maximum number of cores for efficient parallelization     1050
+
+     Reading Hamiltonian, Dynamical matrix and EP vertex in Wann rep from file
+
+
+     Finished reading Wann rep data from file
+
+     ===================================================================
+     Memory usage:  VmHWM =       149Mb
+                   VmPeak =      2211Mb
+     ===================================================================
+     
+     Using uniform q-mesh:   72  48  48
+     Size of q point mesh for interpolation:     165888
+     Using uniform MP k-mesh:   72  48  48
+     Size of k point mesh for interpolation:      24050
+     Max number of k points per pool:               14
+
+     Fermi energy coarse grid =   6.722701 eV
+
+     ===================================================================
+
+     Fermi energy is read from the input file: Ef =   5.667368 eV
+
+     ===================================================================
+
+              ibndmin =    16  ebndmin =     0.378
+              ibndmax =    16  ebndmax =     0.417
+
+
+     Number of ep-matrix elements per pool :          126 ~=    0.98 Kb (@ 8 bytes/ DP)
+     Number selected, total           1000           1781
+     Number selected, total           2000           2933
+     Number selected, total           3000           4698
+     Number selected, total           4000           6485
+     Number selected, total           5000           8107
+     Number selected, total           6000           9401
+     Number selected, total           7000          11214
+     Number selected, total           8000          12948
+     Number selected, total           9000          14143
+     Number selected, total          10000          15962
+     Number selected, total          11000          17754
+     Number selected, total          12000          18906
+     Number selected, total          13000          20724
+     Number selected, total          14000          22551
+     Number selected, total          15000          24287
+     Number selected, total          16000          25606
+     Number selected, total          17000          27501
+     Number selected, total          18000          29495
+     Number selected, total          19000          31485
+     Number selected, total          20000          32812
+     Number selected, total          21000          35987
+     Number selected, total          22000          94800
+     Number selected, total          23000          99132
+     Number selected, total          24000         101569
+     Number selected, total          25000         103807
+     Number selected, total          26000         105940
+     Number selected, total          27000         107960
+     Number selected, total          28000         109920
+     Number selected, total          29000         111200
+     Number selected, total          30000         113084
+     Number selected, total          31000         114958
+     Number selected, total          32000         116778
+     Number selected, total          33000         117986
+     Number selected, total          34000         119812
+     Number selected, total          35000         121617
+     Number selected, total          36000         122817
+     Number selected, total          37000         124565
+     Number selected, total          38000         126363
+     Number selected, total          39000         128047
+     Number selected, total          40000         129269
+     Number selected, total          41000         131063
+     Number selected, total          42000         132794
+     Number selected, total          43000         133968
+     Number selected, total          44000         135758
+     Number selected, total          45000         137518
+     Number selected, total          46000         138676
+     Number selected, total          47000         140472
+     Number selected, total          48000         142261
+     Number selected, total          49000         143410
+     Number selected, total          50000         145199
+     Number selected, total          51000         147006
+     Number selected, total          52000         148595
+     Number selected, total          53000         149934
+     Number selected, total          54000         151739
+     Number selected, total          55000         153449
+     Number selected, total          56000         154659
+     Number selected, total          57000         156467
+     Number selected, total          58000         158232
+     Number selected, total          59000         159391
+     Number selected, total          60000         161180
+     Number selected, total          61000         162954
+     Number selected, total          62000         164102
+     Number selected, total          63000         165881
+     We only need to compute    63007 q-points
+      
+     Valence band maximum    =   5.667368 eV
+     Conduction band minimum =  10.107076 eV
+
+     Temperature  100.000 K
+     Mobility VB Fermi level =   5.704777 eV
+
+     Temperature  200.000 K
+     Mobility VB Fermi level =   5.760449 eV
+
+     Temperature  300.000 K
+     Mobility VB Fermi level =   5.823108 eV
+
+     Temperature  400.000 K
+     Mobility VB Fermi level =   5.890403 eV
+
+     Temperature  500.000 K
+     Mobility VB Fermi level =   5.961221 eV
+
+     Temperature  600.000 K
+     Mobility VB Fermi level =   6.034915 eV
+
+     Temperature  700.000 K
+     Mobility VB Fermi level =   6.111070 eV
+
+     Temperature  800.000 K
+     Mobility VB Fermi level =   6.189408 eV
+
+     Temperature  900.000 K
+     Mobility VB Fermi level =   6.269747 eV
+
+     Temperature 1000.000 K
+     Mobility VB Fermi level =   6.351974 eV
+
+     ===================================================================
+     Scattering rate for IBTE
+     ===================================================================
+
+     Restart and restart_step inputs deactivated (restart point at every q-points).
+     No intermediate mobility will be shown.
+
+     Fermi Surface thickness =   0.530000 eV
+     This is computed with respect to the fine Fermi level   5.667368 eV
+     Only states between   5.137368 eV and   6.197368 eV will be included
+
+     Save matrix elements larger than threshold:   0.363387561502E-26
+      
+     Progression iq (fine) =       1000/     63007
+     Progression iq (fine) =       2000/     63007
+     Progression iq (fine) =       3000/     63007
+     Progression iq (fine) =       4000/     63007
+     Progression iq (fine) =       5000/     63007
+     Progression iq (fine) =       6000/     63007
+     Progression iq (fine) =       7000/     63007
+     Progression iq (fine) =       8000/     63007
+     Progression iq (fine) =       9000/     63007
+     Progression iq (fine) =      10000/     63007
+     Progression iq (fine) =      11000/     63007
+     Progression iq (fine) =      12000/     63007
+     Progression iq (fine) =      13000/     63007
+     Progression iq (fine) =      14000/     63007
+     Progression iq (fine) =      15000/     63007
+     Progression iq (fine) =      16000/     63007
+     Progression iq (fine) =      17000/     63007
+     Progression iq (fine) =      18000/     63007
+     Progression iq (fine) =      19000/     63007
+     Progression iq (fine) =      20000/     63007
+     Progression iq (fine) =      21000/     63007
+     Progression iq (fine) =      22000/     63007
+     Progression iq (fine) =      23000/     63007
+     Progression iq (fine) =      24000/     63007
+     Progression iq (fine) =      25000/     63007
+     Progression iq (fine) =      26000/     63007
+     Progression iq (fine) =      27000/     63007
+     Progression iq (fine) =      28000/     63007
+     Progression iq (fine) =      29000/     63007
+     Progression iq (fine) =      30000/     63007
+     Progression iq (fine) =      31000/     63007
+     Progression iq (fine) =      32000/     63007
+     Progression iq (fine) =      33000/     63007
+     Progression iq (fine) =      34000/     63007
+     Progression iq (fine) =      35000/     63007
+     Progression iq (fine) =      36000/     63007
+     Progression iq (fine) =      37000/     63007
+     Progression iq (fine) =      38000/     63007
+     Progression iq (fine) =      39000/     63007
+     Progression iq (fine) =      40000/     63007
+     Progression iq (fine) =      41000/     63007
+     Progression iq (fine) =      42000/     63007
+     Progression iq (fine) =      43000/     63007
+     Progression iq (fine) =      44000/     63007
+     Progression iq (fine) =      45000/     63007
+     Progression iq (fine) =      46000/     63007
+     Progression iq (fine) =      47000/     63007
+     Progression iq (fine) =      48000/     63007
+     Progression iq (fine) =      49000/     63007
+     Progression iq (fine) =      50000/     63007
+     Progression iq (fine) =      51000/     63007
+     Progression iq (fine) =      52000/     63007
+     Progression iq (fine) =      53000/     63007
+     Progression iq (fine) =      54000/     63007
+     Progression iq (fine) =      55000/     63007
+     Progression iq (fine) =      56000/     63007
+     Progression iq (fine) =      57000/     63007
+     Progression iq (fine) =      58000/     63007
+     Progression iq (fine) =      59000/     63007
+     Progression iq (fine) =      60000/     63007
+     Progression iq (fine) =      61000/     63007
+     Progression iq (fine) =      62000/     63007
+     Progression iq (fine) =      63000/     63007
+      100.000      5.7048       0.100001E+18
+      200.000      5.7604       0.999992E+17
+      300.000      5.8231       0.999994E+17
+      400.000      5.8904       0.999993E+17
+      500.000      5.9612       0.999994E+17
+      600.000      6.0349       0.999966E+17
+      700.000      6.1111       0.999784E+17
+      800.000      6.1894       0.999255E+17
+      900.000      6.2697       0.998110E+17
+     1000.000      6.3520       0.996001E+17
+      
+     epmatkqread automatically changed to .TRUE. as all scattering have been computed.
+      
+     ===================================================================
+     Memory usage:  VmHWM =       269Mb
+                   VmPeak =      3419Mb
+     ===================================================================
+
+     Number of elements per core      77493
+     Symmetry mapping finished
+      
+     =============================================================================================
+     BTE in the self-energy relaxation time approximation (SERTA)
+     =============================================================================================
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.42323E-17    0.720849E+03   -0.472948E-14    0.000000E+00
+                                                     -0.226942E-14    0.879759E+03    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.879759E+03
+      200.000   5.7604   0.99999E+17  -0.51755E-18    0.549446E+02    0.158652E-15    0.000000E+00
+                                                      0.130331E-15    0.642903E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.642903E+02
+      300.000   5.8231   0.99999E+17   0.15599E-18    0.163514E+02   -0.445858E-16    0.000000E+00
+                                                      0.250695E-16    0.186332E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.186332E+02
+      400.000   5.8904   0.99999E+17   0.11928E-18    0.774284E+01   -0.867949E-17    0.000000E+00
+                                                     -0.425094E-19    0.898896E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.898896E+01
+      500.000   5.9612   0.99999E+17   0.64574E-19    0.459275E+01    0.272053E-17    0.000000E+00
+                                                     -0.941573E-19    0.548886E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.548886E+01
+      600.000   6.0349   0.99997E+17   0.31081E-19    0.311128E+01    0.516856E-17    0.000000E+00
+                                                     -0.688997E-19    0.381687E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.381687E+01
+      700.000   6.1111   0.99978E+17   0.11922E-19    0.229428E+01    0.407497E-17    0.000000E+00
+                                                      0.225482E-17    0.287235E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.287235E+01
+      800.000   6.1894   0.99926E+17   0.32901E-20    0.178982E+01    0.109521E-17    0.000000E+00
+                                                     -0.126771E-17    0.227397E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.227397E+01
+      900.000   6.2697   0.99811E+17  -0.37699E-20    0.145070E+01    0.286633E-18    0.000000E+00
+                                                      0.689371E-18    0.186190E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.186190E+01
+     1000.000   6.3520   0.99600E+17   0.38133E-21    0.120725E+01   -0.564300E-18    0.000000E+00
+                                                     -0.295239E-18    0.155988E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.155988E+01
+      
+     =============================================================================================
+     Start solving iterative Boltzmann Transport Equation
+     =============================================================================================
+
+     Iteration number:         1
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.37894E-16    0.782398E+03   -0.231924E-16    0.000000E+00
+                                                      0.380479E-14    0.954459E+03    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.954459E+03
+      200.000   5.7604   0.99999E+17  -0.22940E-18    0.694545E+02   -0.461811E-16    0.000000E+00
+                                                     -0.158729E-15    0.755959E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.755959E+02
+      300.000   5.8231   0.99999E+17   0.30437E-19    0.223661E+02    0.103313E-16    0.000000E+00
+                                                     -0.540151E-16    0.236498E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.236498E+02
+      400.000   5.8904   0.99999E+17  -0.22210E-19    0.109912E+02   -0.901540E-18    0.000000E+00
+                                                     -0.214279E-16    0.119317E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.119317E+02
+      500.000   5.9612   0.99999E+17   0.45197E-19    0.668352E+01   -0.183702E-17    0.000000E+00
+                                                      0.521568E-17    0.751326E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.751326E+01
+      600.000   6.0349   0.99997E+17   0.14795E-19    0.461326E+01    0.310818E-17    0.000000E+00
+                                                     -0.391687E-17    0.534689E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.534689E+01
+      700.000   6.1111   0.99978E+17   0.24758E-19    0.345099E+01    0.236276E-17    0.000000E+00
+                                                      0.472624E-17    0.409698E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.409698E+01
+      800.000   6.1894   0.99926E+17  -0.15577E-19    0.272163E+01    0.197152E-17    0.000000E+00
+                                                      0.173957E-19    0.329007E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.329007E+01
+      900.000   6.2697   0.99811E+17   0.12887E-19    0.222395E+01    0.103043E-17    0.000000E+00
+                                                      0.196942E-17    0.272463E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.272463E+01
+     1000.000   6.3520   0.99600E+17   0.12464E-19    0.186182E+01    0.287822E-17    0.000000E+00
+                                                     -0.203322E-17    0.230343E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.230343E+01
+
+                                                      0.954459E+03    Max error
+     Iteration number:         2
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.19633E-16    0.868281E+03    0.209087E-14    0.000000E+00
+                                                      0.501281E-15    0.100748E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.100748E+04
+      200.000   5.7604   0.99999E+17   0.27108E-17    0.793554E+02    0.629784E-16    0.000000E+00
+                                                     -0.661417E-16    0.814253E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.814253E+02
+      300.000   5.8231   0.99999E+17   0.25972E-18    0.256295E+02   -0.149866E-16    0.000000E+00
+                                                      0.447348E-16    0.256873E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.256873E+02
+      400.000   5.8904   0.99999E+17   0.14572E-19    0.126958E+02   -0.217686E-16    0.000000E+00
+                                                     -0.103693E-16    0.131206E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.131206E+02
+      500.000   5.9612   0.99999E+17  -0.30225E-19    0.779186E+01    0.825619E-17    0.000000E+00
+                                                     -0.844550E-17    0.836653E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.836653E+01
+      600.000   6.0349   0.99997E+17  -0.17708E-19    0.542533E+01    0.162951E-17    0.000000E+00
+                                                      0.408672E-17    0.602233E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.602233E+01
+      700.000   6.1111   0.99978E+17   0.10391E-19    0.408913E+01   -0.526993E-17    0.000000E+00
+                                                      0.317087E-17    0.466030E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.466030E+01
+      800.000   6.1894   0.99926E+17   0.53080E-20    0.324499E+01    0.193238E-17    0.000000E+00
+                                                      0.180336E-17    0.377387E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.377387E+01
+      900.000   6.2697   0.99811E+17  -0.72908E-20    0.266481E+01    0.131634E-17    0.000000E+00
+                                                     -0.208263E-17    0.314718E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.314718E+01
+     1000.000   6.3520   0.99600E+17   0.13425E-19    0.223958E+01   -0.167254E-18    0.000000E+00
+                                                      0.220193E-17    0.267608E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.267608E+01
+
+                                                      0.530163E+02    Max error
+     Iteration number:         3
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.70667E-16    0.881143E+03   -0.165386E-14    0.000000E+00
+                                                      0.763867E-15    0.101564E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.101564E+04
+      200.000   5.7604   0.99999E+17   0.15176E-17    0.830190E+02   -0.145646E-15    0.000000E+00
+                                                     -0.412386E-16    0.828265E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.828265E+02
+      300.000   5.8231   0.99999E+17  -0.34692E-18    0.271784E+02   -0.436073E-16    0.000000E+00
+                                                     -0.366577E-16    0.263780E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.263780E+02
+      400.000   5.8904   0.99999E+17   0.27901E-19    0.135627E+02   -0.136346E-16    0.000000E+00
+                                                     -0.144985E-16    0.135810E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.135810E+02
+      500.000   5.9612   0.99999E+17  -0.42367E-19    0.837765E+01   -0.261638E-16    0.000000E+00
+                                                     -0.326323E-17    0.872427E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.872427E+01
+      600.000   6.0349   0.99997E+17  -0.52954E-19    0.586774E+01   -0.221131E-17    0.000000E+00
+                                                      0.120344E-17    0.632279E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.632279E+01
+      700.000   6.1111   0.99978E+17  -0.80174E-20    0.444562E+01    0.237254E-18    0.000000E+00
+                                                     -0.584187E-17    0.492278E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.492278E+01
+      800.000   6.1894   0.99926E+17   0.25418E-19    0.354341E+01    0.313123E-18    0.000000E+00
+                                                      0.175407E-18    0.400767E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.400767E+01
+      900.000   6.2697   0.99811E+17   0.12042E-19    0.292035E+01   -0.201441E-17    0.000000E+00
+                                                     -0.240772E-17    0.335734E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.335734E+01
+     1000.000   6.3520   0.99600E+17   0.16123E-19    0.246142E+01   -0.788274E-18    0.000000E+00
+                                                     -0.756278E-18    0.286568E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.286568E+01
+
+                                                      0.816484E+01    Max error
+     Iteration number:         4
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.27583E-16    0.892343E+03    0.232558E-14    0.000000E+00
+                                                     -0.241490E-14    0.101924E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.101924E+04
+      200.000   5.7604   0.99999E+17  -0.19819E-17    0.851930E+02    0.768217E-16    0.000000E+00
+                                                     -0.661317E-16    0.834536E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.834536E+02
+      300.000   5.8231   0.99999E+17   0.26727E-18    0.279887E+02    0.169074E-16    0.000000E+00
+                                                     -0.760772E-17    0.266485E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.266485E+02
+      400.000   5.8904   0.99999E+17   0.12353E-19    0.140182E+02    0.129492E-16    0.000000E+00
+                                                      0.772877E-18    0.137680E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.137680E+02
+      500.000   5.9612   0.99999E+17   0.72477E-19    0.869329E+01    0.172602E-17    0.000000E+00
+                                                      0.148894E-16    0.887835E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.887835E+01
+      600.000   6.0349   0.99997E+17  -0.15427E-20    0.611253E+01   -0.111065E-16    0.000000E+00
+                                                      0.492529E-18    0.645926E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.645926E+01
+      700.000   6.1111   0.99978E+17  -0.11463E-19    0.464760E+01   -0.251416E-17    0.000000E+00
+                                                     -0.761385E-18    0.504728E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.504728E+01
+      800.000   6.1894   0.99926E+17   0.10662E-20    0.371587E+01   -0.614214E-17    0.000000E+00
+                                                     -0.553039E-17    0.412247E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.412247E+01
+      900.000   6.2697   0.99811E+17  -0.21144E-19    0.307042E+01   -0.957863E-18    0.000000E+00
+                                                      0.187219E-17    0.346336E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.346336E+01
+     1000.000   6.3520   0.99600E+17  -0.15965E-20    0.259339E+01   -0.389774E-18    0.000000E+00
+                                                      0.607931E-18    0.296341E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.296341E+01
+
+                                                      0.359626E+01    Max error
+     Iteration number:         5
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.21958E-16    0.894694E+03   -0.170368E-14    0.000000E+00
+                                                     -0.985088E-15    0.101998E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.101998E+04
+      200.000   5.7604   0.99999E+17  -0.13433E-17    0.860916E+02    0.282543E-15    0.000000E+00
+                                                      0.112528E-15    0.836243E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.836243E+02
+      300.000   5.8231   0.99999E+17   0.28613E-18    0.283897E+02   -0.147011E-16    0.000000E+00
+                                                      0.997014E-17    0.267449E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.267449E+02
+      400.000   5.8904   0.99999E+17   0.30195E-18    0.142558E+02   -0.342174E-17    0.000000E+00
+                                                     -0.201266E-16    0.138427E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138427E+02
+      500.000   5.9612   0.99999E+17   0.70066E-20    0.886369E+01   -0.115425E-16    0.000000E+00
+                                                     -0.104469E-17    0.894483E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.894483E+01
+      600.000   6.0349   0.99997E+17   0.13547E-19    0.624863E+01    0.557517E-17    0.000000E+00
+                                                     -0.235617E-17    0.652165E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.652165E+01
+      700.000   6.1111   0.99978E+17   0.32806E-20    0.476272E+01    0.249859E-17    0.000000E+00
+                                                      0.351353E-18    0.510682E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.510682E+01
+      800.000   6.1894   0.99926E+17  -0.64520E-22    0.381617E+01    0.267822E-17    0.000000E+00
+                                                      0.135977E-17    0.417930E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.417930E+01
+      900.000   6.2697   0.99811E+17  -0.16990E-20    0.315913E+01    0.295486E-17    0.000000E+00
+                                                     -0.545692E-18    0.351728E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.351728E+01
+     1000.000   6.3520   0.99600E+17  -0.13136E-19    0.267241E+01   -0.203613E-19    0.000000E+00
+                                                      0.756278E-19    0.301414E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.301414E+01
+
+                                                      0.898580E+00    Max error
+     Iteration number:         6
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.21714E-16    0.896190E+03    0.309070E-14    0.000000E+00
+                                                      0.753327E-15    0.102024E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102024E+04
+      200.000   5.7604   0.99999E+17   0.20759E-17    0.865815E+02    0.319736E-15    0.000000E+00
+                                                     -0.183049E-15    0.836938E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.836938E+02
+      300.000   5.8231   0.99999E+17  -0.49946E-18    0.285961E+02    0.309135E-16    0.000000E+00
+                                                     -0.832591E-17    0.267819E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.267819E+02
+      400.000   5.8904   0.99999E+17  -0.23731E-19    0.143808E+02    0.171341E-17    0.000000E+00
+                                                     -0.299141E-16    0.138732E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138732E+02
+      500.000   5.9612   0.99999E+17  -0.44741E-19    0.895618E+01    0.224098E-16    0.000000E+00
+                                                     -0.363212E-17    0.897382E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.897382E+01
+      600.000   6.0349   0.99997E+17  -0.37019E-19    0.632468E+01   -0.861201E-18    0.000000E+00
+                                                     -0.329668E-17    0.655043E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.655043E+01
+      700.000   6.1111   0.99978E+17  -0.41359E-23    0.482866E+01    0.135180E-17    0.000000E+00
+                                                      0.361278E-17    0.513552E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.513552E+01
+      800.000   6.1894   0.99926E+17  -0.37223E-21    0.387480E+01    0.261661E-18    0.000000E+00
+                                                     -0.249919E-17    0.420763E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.420763E+01
+      900.000   6.2697   0.99811E+17   0.19174E-19    0.321183E+01   -0.699530E-18    0.000000E+00
+                                                      0.208988E-17    0.354487E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.354487E+01
+     1000.000   6.3520   0.99600E+17  -0.20828E-20    0.271994E+01    0.233574E-17    0.000000E+00
+                                                     -0.215830E-17    0.304064E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.304064E+01
+
+                                                      0.489902E+00    Max error
+     Iteration number:         7
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.10285E-18    0.896586E+03   -0.112070E-14    0.000000E+00
+                                                      0.208593E-14    0.102030E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102030E+04
+      200.000   5.7604   0.99999E+17  -0.15265E-17    0.867977E+02    0.192988E-15    0.000000E+00
+                                                     -0.411358E-16    0.837142E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837142E+02
+      300.000   5.8231   0.99999E+17   0.14005E-18    0.286997E+02    0.687992E-16    0.000000E+00
+                                                      0.245052E-16    0.267954E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.267954E+02
+      400.000   5.8904   0.99999E+17   0.20167E-18    0.144464E+02    0.242005E-16    0.000000E+00
+                                                      0.831881E-17    0.138855E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138855E+02
+      500.000   5.9612   0.99999E+17   0.70259E-19    0.900645E+01   -0.114173E-16    0.000000E+00
+                                                      0.444929E-17    0.898649E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.898649E+01
+      600.000   6.0349   0.99997E+17   0.46320E-20    0.636729E+01    0.158569E-17    0.000000E+00
+                                                     -0.567748E-17    0.656377E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.656377E+01
+      700.000   6.1111   0.99978E+17  -0.27007E-21    0.486655E+01   -0.197047E-17    0.000000E+00
+                                                      0.214217E-17    0.514943E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.514943E+01
+      800.000   6.1894   0.99926E+17  -0.16370E-19    0.390918E+01   -0.126336E-17    0.000000E+00
+                                                     -0.268184E-18    0.422183E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.422183E+01
+      900.000   6.2697   0.99811E+17  -0.17602E-20    0.324322E+01   -0.229016E-17    0.000000E+00
+                                                      0.320158E-17    0.355905E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.355905E+01
+     1000.000   6.3520   0.99600E+17  -0.71899E-20    0.274863E+01   -0.107624E-18    0.000000E+00
+                                                     -0.184125E-17    0.305453E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.305453E+01
+
+                                                      0.216227E+00    Max error
+     Iteration number:         8
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.24177E-16    0.896790E+03    0.160281E-14    0.000000E+00
+                                                     -0.252778E-14    0.102032E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102032E+04
+      200.000   5.7604   0.99999E+17  -0.16494E-17    0.869096E+02    0.236634E-15    0.000000E+00
+                                                      0.447640E-15    0.837220E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837220E+02
+      300.000   5.8231   0.99999E+17   0.69939E-18    0.287526E+02   -0.137072E-17    0.000000E+00
+                                                     -0.310795E-16    0.268005E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268005E+02
+      400.000   5.8904   0.99999E+17   0.45820E-19    0.144810E+02    0.147684E-16    0.000000E+00
+                                                      0.103659E-16    0.138906E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138906E+02
+      500.000   5.9612   0.99999E+17   0.18024E-19    0.903385E+01   -0.878786E-17    0.000000E+00
+                                                     -0.690752E-17    0.899205E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899205E+01
+      600.000   6.0349   0.99997E+17   0.44345E-19    0.639122E+01   -0.321628E-17    0.000000E+00
+                                                     -0.265458E-18    0.656998E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.656998E+01
+      700.000   6.1111   0.99978E+17   0.53167E-19    0.488837E+01    0.169881E-17    0.000000E+00
+                                                     -0.528840E-18    0.515620E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.515620E+01
+      800.000   6.1894   0.99926E+17  -0.18737E-19    0.392939E+01   -0.873120E-17    0.000000E+00
+                                                      0.307759E-17    0.422898E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.422898E+01
+      900.000   6.2697   0.99811E+17  -0.66340E-20    0.326198E+01   -0.180833E-17    0.000000E+00
+                                                      0.158773E-17    0.356637E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.356637E+01
+     1000.000   6.3520   0.99600E+17   0.16373E-19    0.276598E+01    0.100934E-17    0.000000E+00
+                                                     -0.346143E-18    0.306183E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306183E+01
+
+                                                      0.111884E+00    Max error
+     Iteration number:         9
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.28808E-16    0.896854E+03    0.182026E-15    0.000000E+00
+                                                     -0.227543E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.56200E-18    0.869610E+02   -0.138419E-15    0.000000E+00
+                                                      0.105434E-15    0.837244E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837244E+02
+      300.000   5.8231   0.99999E+17  -0.47873E-18    0.287794E+02   -0.831482E-16    0.000000E+00
+                                                      0.556188E-16    0.268024E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268024E+02
+      400.000   5.8904   0.99999E+17  -0.17642E-19    0.144992E+02    0.107725E-16    0.000000E+00
+                                                     -0.172630E-16    0.138926E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138926E+02
+      500.000   5.9612   0.99999E+17  -0.72568E-19    0.904879E+01   -0.108036E-16    0.000000E+00
+                                                     -0.293304E-16    0.899450E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899450E+01
+      600.000   6.0349   0.99997E+17   0.35288E-19    0.640468E+01    0.846353E-18    0.000000E+00
+                                                      0.571514E-17    0.657288E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657288E+01
+      700.000   6.1111   0.99978E+17   0.15863E-19    0.490097E+01   -0.733711E-17    0.000000E+00
+                                                     -0.131051E-17    0.515950E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.515950E+01
+      800.000   6.1894   0.99926E+17   0.28732E-19    0.394129E+01    0.256587E-17    0.000000E+00
+                                                     -0.112057E-17    0.423259E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423259E+01
+      900.000   6.2697   0.99811E+17  -0.86738E-20    0.327320E+01    0.253108E-17    0.000000E+00
+                                                     -0.870784E-20    0.357016E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357016E+01
+     1000.000   6.3520   0.99600E+17   0.17789E-19    0.277649E+01   -0.994797E-18    0.000000E+00
+                                                      0.581752E-19    0.306568E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306568E+01
+
+                                                      0.513940E-01    Max error
+     Iteration number:        10
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.70216E-16    0.896882E+03   -0.656774E-16    0.000000E+00
+                                                      0.172656E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.26395E-17    0.869868E+02   -0.379793E-15    0.000000E+00
+                                                     -0.708050E-16    0.837253E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837253E+02
+      300.000   5.8231   0.99999E+17  -0.33539E-18    0.287930E+02   -0.245925E-16    0.000000E+00
+                                                      0.598758E-17    0.268031E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268031E+02
+      400.000   5.8904   0.99999E+17   0.17354E-18    0.145088E+02   -0.245168E-16    0.000000E+00
+                                                     -0.184580E-16    0.138935E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138935E+02
+      500.000   5.9612   0.99999E+17  -0.11722E-18    0.905694E+01    0.218412E-16    0.000000E+00
+                                                     -0.100622E-16    0.899559E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899559E+01
+      600.000   6.0349   0.99997E+17   0.29369E-19    0.641227E+01   -0.227597E-16    0.000000E+00
+                                                      0.893650E-17    0.657424E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657424E+01
+      700.000   6.1111   0.99978E+17   0.40495E-20    0.490825E+01   -0.187412E-17    0.000000E+00
+                                                      0.307234E-17    0.516112E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516112E+01
+      800.000   6.1894   0.99926E+17   0.16207E-19    0.394831E+01    0.210198E-18    0.000000E+00
+                                                     -0.311673E-18    0.423441E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423441E+01
+      900.000   6.2697   0.99811E+17   0.13923E-19    0.327992E+01    0.669053E-18    0.000000E+00
+                                                     -0.279812E-17    0.357212E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357212E+01
+     1000.000   6.3520   0.99600E+17  -0.11377E-19    0.278286E+01   -0.162309E-17    0.000000E+00
+                                                     -0.158818E-17    0.306772E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306772E+01
+
+                                                      0.257774E-01    Max error
+     Iteration number:        11
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.44347E-16    0.896892E+03   -0.591387E-16    0.000000E+00
+                                                      0.626853E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.16964E-17    0.869989E+02    0.181846E-16    0.000000E+00
+                                                      0.393838E-16    0.837256E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837256E+02
+      300.000   5.8231   0.99999E+17   0.65466E-18    0.287999E+02   -0.490879E-17    0.000000E+00
+                                                     -0.303326E-16    0.268034E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268034E+02
+      400.000   5.8904   0.99999E+17  -0.11859E-18    0.145138E+02    0.263436E-16    0.000000E+00
+                                                      0.588054E-17    0.138938E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138938E+02
+      500.000   5.9612   0.99999E+17  -0.14328E-18    0.906140E+01   -0.751692E-17    0.000000E+00
+                                                      0.764657E-17    0.899606E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899606E+01
+      600.000   6.0349   0.99997E+17   0.40867E-19    0.641654E+01   -0.981907E-17    0.000000E+00
+                                                     -0.683565E-17    0.657488E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657488E+01
+      700.000   6.1111   0.99978E+17  -0.38163E-19    0.491247E+01    0.346934E-17    0.000000E+00
+                                                      0.472841E-17    0.516191E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516191E+01
+      800.000   6.1894   0.99926E+17   0.94960E-20    0.395246E+01    0.113217E-17    0.000000E+00
+                                                      0.266010E-17    0.423534E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423534E+01
+      900.000   6.2697   0.99811E+17   0.58101E-20    0.328396E+01    0.352668E-18    0.000000E+00
+                                                     -0.226694E-17    0.357314E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357314E+01
+     1000.000   6.3520   0.99600E+17  -0.33584E-20    0.278673E+01   -0.529395E-18    0.000000E+00
+                                                      0.232119E-17    0.306879E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306879E+01
+
+                                                      0.121221E-01    Max error
+     Iteration number:        12
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.25797E-16    0.896896E+03   -0.870826E-15    0.000000E+00
+                                                     -0.147745E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17  -0.55491E-19    0.870049E+02   -0.107648E-16    0.000000E+00
+                                                      0.688777E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.24820E-18    0.288034E+02    0.493298E-16    0.000000E+00
+                                                      0.562306E-16    0.268034E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268034E+02
+      400.000   5.8904   0.99999E+17  -0.54613E-19    0.145165E+02    0.217294E-16    0.000000E+00
+                                                     -0.134371E-16    0.138940E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138940E+02
+      500.000   5.9612   0.99999E+17   0.11590E-18    0.906384E+01    0.107056E-16    0.000000E+00
+                                                     -0.457749E-18    0.899628E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899628E+01
+      600.000   6.0349   0.99997E+17  -0.51251E-19    0.641896E+01   -0.141041E-17    0.000000E+00
+                                                     -0.123505E-16    0.657518E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657518E+01
+      700.000   6.1111   0.99978E+17  -0.36680E-19    0.491491E+01    0.182341E-17    0.000000E+00
+                                                     -0.472769E-17    0.516230E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516230E+01
+      800.000   6.1894   0.99926E+17   0.32986E-19    0.395491E+01   -0.716124E-18    0.000000E+00
+                                                      0.777009E-18    0.423581E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423581E+01
+      900.000   6.2697   0.99811E+17  -0.35370E-20    0.328638E+01   -0.605195E-18    0.000000E+00
+                                                     -0.112331E-17    0.357367E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357367E+01
+     1000.000   6.3520   0.99600E+17  -0.62369E-21    0.278909E+01   -0.584661E-18    0.000000E+00
+                                                      0.173071E-17    0.306936E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306936E+01
+
+                                                      0.597233E-02    Max error
+     Iteration number:        13
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.27811E-17    0.896898E+03    0.119761E-14    0.000000E+00
+                                                      0.534063E-15    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.94064E-18    0.870077E+02   -0.525672E-16    0.000000E+00
+                                                      0.926251E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.31639E-18    0.288052E+02   -0.269089E-16    0.000000E+00
+                                                      0.895594E-19    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.96538E-19    0.145179E+02    0.351637E-16    0.000000E+00
+                                                      0.268915E-16    0.138940E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138940E+02
+      500.000   5.9612   0.99999E+17   0.68573E-19    0.906517E+01   -0.593653E-17    0.000000E+00
+                                                     -0.157912E-16    0.899637E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899637E+01
+      600.000   6.0349   0.99997E+17   0.90804E-21    0.642032E+01   -0.508826E-18    0.000000E+00
+                                                      0.131751E-17    0.657532E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657532E+01
+      700.000   6.1111   0.99978E+17  -0.80265E-20    0.491632E+01    0.909171E-18    0.000000E+00
+                                                      0.514714E-17    0.516249E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516249E+01
+      800.000   6.1894   0.99926E+17  -0.15204E-19    0.395636E+01   -0.216867E-17    0.000000E+00
+                                                     -0.275142E-17    0.423604E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423604E+01
+      900.000   6.2697   0.99811E+17   0.10934E-19    0.328784E+01    0.963668E-18    0.000000E+00
+                                                     -0.566010E-18    0.357395E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357395E+01
+     1000.000   6.3520   0.99600E+17   0.37637E-20    0.279052E+01    0.168708E-17    0.000000E+00
+                                                     -0.145438E-18    0.306967E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306967E+01
+
+                                                      0.284602E-02    Max error
+     Iteration number:        14
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.73022E-17    0.896898E+03   -0.456297E-14    0.000000E+00
+                                                     -0.207806E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.33896E-17    0.870091E+02   -0.399131E-15    0.000000E+00
+                                                      0.100269E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.35718E-18    0.288061E+02   -0.557655E-17    0.000000E+00
+                                                     -0.242962E-17    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.55720E-20    0.145187E+02    0.350780E-17    0.000000E+00
+                                                     -0.378305E-17    0.138940E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138940E+02
+      500.000   5.9612   0.99999E+17   0.71782E-19    0.906590E+01   -0.419013E-17    0.000000E+00
+                                                     -0.485118E-17    0.899641E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899641E+01
+      600.000   6.0349   0.99997E+17   0.35750E-19    0.642109E+01   -0.423303E-17    0.000000E+00
+                                                      0.232865E-18    0.657538E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657538E+01
+      700.000   6.1111   0.99978E+17  -0.20640E-19    0.491714E+01   -0.683363E-17    0.000000E+00
+                                                     -0.208566E-17    0.516259E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516259E+01
+      800.000   6.1894   0.99926E+17   0.26677E-20    0.395722E+01   -0.154097E-17    0.000000E+00
+                                                      0.181640E-17    0.423617E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423617E+01
+      900.000   6.2697   0.99811E+17   0.10222E-19    0.328871E+01   -0.837404E-18    0.000000E+00
+                                                      0.995597E-18    0.357409E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357409E+01
+     1000.000   6.3520   0.99600E+17  -0.31615E-20    0.279139E+01    0.264697E-17    0.000000E+00
+                                                      0.634110E-18    0.306983E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306983E+01
+
+                                                      0.138844E-02    Max error
+     Iteration number:        15
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.43225E-16    0.896899E+03    0.130282E-14    0.000000E+00
+                                                      0.426903E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.13210E-17    0.870098E+02   -0.152684E-15    0.000000E+00
+                                                     -0.159091E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.46097E-18    0.288066E+02   -0.299138E-17    0.000000E+00
+                                                     -0.674927E-17    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.10551E-18    0.145190E+02   -0.611897E-17    0.000000E+00
+                                                     -0.309128E-17    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.75174E-19    0.906630E+01   -0.363431E-16    0.000000E+00
+                                                      0.294739E-17    0.899643E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899643E+01
+      600.000   6.0349   0.99997E+17   0.11521E-19    0.642153E+01    0.307215E-17    0.000000E+00
+                                                     -0.132411E-16    0.657542E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657542E+01
+      700.000   6.1111   0.99978E+17  -0.19059E-19    0.491762E+01    0.778047E-18    0.000000E+00
+                                                     -0.505658E-17    0.516264E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516264E+01
+      800.000   6.1894   0.99926E+17  -0.25734E-20    0.395773E+01    0.170043E-17    0.000000E+00
+                                                      0.650890E-18    0.423623E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423623E+01
+      900.000   6.2697   0.99811E+17   0.14122E-19    0.328924E+01    0.420879E-17    0.000000E+00
+                                                     -0.163707E-17    0.357417E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357417E+01
+     1000.000   6.3520   0.99600E+17  -0.80733E-21    0.279191E+01   -0.131185E-17    0.000000E+00
+                                                     -0.319964E-18    0.306991E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306991E+01
+
+                                                      0.666402E-03    Max error
+     Iteration number:        16
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.59194E-16    0.896899E+03    0.168438E-14    0.000000E+00
+                                                     -0.229375E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.36150E-17    0.870101E+02   -0.133821E-15    0.000000E+00
+                                                     -0.603323E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.60143E-18    0.288068E+02   -0.565968E-16    0.000000E+00
+                                                      0.310813E-17    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.27292E-19    0.145193E+02    0.587527E-17    0.000000E+00
+                                                      0.399159E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.12629E-18    0.906652E+01    0.198019E-16    0.000000E+00
+                                                     -0.340913E-17    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17   0.54429E-19    0.642178E+01   -0.479509E-17    0.000000E+00
+                                                      0.424734E-17    0.657543E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657543E+01
+      700.000   6.1111   0.99978E+17  -0.97136E-20    0.491790E+01   -0.408076E-17    0.000000E+00
+                                                      0.441328E-17    0.516266E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516266E+01
+      800.000   6.1894   0.99926E+17  -0.19291E-19    0.395803E+01   -0.347914E-19    0.000000E+00
+                                                     -0.650890E-18    0.423626E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423626E+01
+      900.000   6.2697   0.99811E+17   0.13698E-20    0.328955E+01   -0.435392E-20    0.000000E+00
+                                                      0.183445E-17    0.357420E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357420E+01
+     1000.000   6.3520   0.99600E+17   0.11696E-19    0.279224E+01   -0.402573E-17    0.000000E+00
+                                                     -0.193433E-17    0.306996E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306996E+01
+
+                                                      0.323420E-03    Max error
+     Iteration number:        17
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.50514E-17    0.896899E+03   -0.159445E-14    0.000000E+00
+                                                      0.702753E-15    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.31548E-17    0.870103E+02   -0.996140E-16    0.000000E+00
+                                                      0.824130E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.47233E-18    0.288069E+02    0.237852E-16    0.000000E+00
+                                                      0.233555E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.37987E-19    0.145194E+02    0.244300E-16    0.000000E+00
+                                                      0.113181E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17  -0.44338E-19    0.906663E+01    0.328536E-17    0.000000E+00
+                                                     -0.698937E-19    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17   0.37932E-19    0.642191E+01    0.469894E-17    0.000000E+00
+                                                      0.432773E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17  -0.19470E-19    0.491806E+01    0.199800E-17    0.000000E+00
+                                                     -0.519567E-17    0.516267E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516267E+01
+      800.000   6.1894   0.99926E+17  -0.32169E-20    0.395821E+01    0.207299E-18    0.000000E+00
+                                                     -0.276882E-18    0.423628E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423628E+01
+      900.000   6.2697   0.99811E+17  -0.15837E-19    0.328974E+01    0.311596E-17    0.000000E+00
+                                                     -0.144260E-17    0.357422E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357422E+01
+     1000.000   6.3520   0.99600E+17   0.57390E-20    0.279243E+01    0.114314E-17    0.000000E+00
+                                                     -0.596296E-18    0.306998E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306998E+01
+
+                                                      0.155806E-03    Max error
+     Iteration number:        18
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.18540E-16    0.896899E+03    0.814918E-15    0.000000E+00
+                                                      0.475852E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17  -0.13648E-17    0.870103E+02   -0.796583E-16    0.000000E+00
+                                                      0.113031E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.11070E-17    0.288070E+02    0.132854E-15    0.000000E+00
+                                                     -0.222766E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.57611E-19    0.145194E+02   -0.372838E-16    0.000000E+00
+                                                     -0.867103E-17    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.36084E-19    0.906670E+01    0.540544E-17    0.000000E+00
+                                                     -0.107683E-17    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17  -0.87660E-19    0.642199E+01   -0.891405E-17    0.000000E+00
+                                                     -0.531243E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17  -0.84389E-20    0.491815E+01    0.220229E-18    0.000000E+00
+                                                     -0.215738E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17  -0.10185E-19    0.395832E+01    0.400102E-18    0.000000E+00
+                                                     -0.971261E-19    0.423628E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423628E+01
+      900.000   6.2697   0.99811E+17  -0.13678E-19    0.328986E+01    0.395336E-17    0.000000E+00
+                                                     -0.258913E-17    0.357424E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357424E+01
+     1000.000   6.3520   0.99600E+17  -0.41260E-20    0.279255E+01   -0.913351E-18    0.000000E+00
+                                                     -0.260043E-17    0.306999E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.306999E+01
+
+                                                      0.754190E-04    Max error
+     Iteration number:        19
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.13350E-17    0.896899E+03    0.295771E-14    0.000000E+00
+                                                      0.476188E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.17087E-17    0.870104E+02    0.276546E-15    0.000000E+00
+                                                     -0.149926E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.37132E-18    0.288070E+02    0.114130E-15    0.000000E+00
+                                                     -0.154530E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.15103E-18    0.145195E+02   -0.327856E-16    0.000000E+00
+                                                     -0.148216E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17  -0.27742E-19    0.906674E+01   -0.712979E-17    0.000000E+00
+                                                      0.561232E-17    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17  -0.35211E-19    0.642204E+01   -0.558314E-17    0.000000E+00
+                                                     -0.263865E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.38819E-19    0.491820E+01    0.381272E-17    0.000000E+00
+                                                     -0.110549E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17  -0.32315E-19    0.395838E+01    0.160186E-17    0.000000E+00
+                                                      0.102345E-17    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17  -0.57406E-21    0.328993E+01   -0.320594E-17    0.000000E+00
+                                                     -0.273426E-17    0.357424E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357424E+01
+     1000.000   6.3520   0.99600E+17   0.52625E-20    0.279263E+01   -0.253644E-17    0.000000E+00
+                                                      0.581752E-18    0.307000E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307000E+01
+
+                                                      0.363985E-04    Max error
+     Iteration number:        20
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.16617E-16    0.896899E+03    0.253593E-14    0.000000E+00
+                                                      0.223392E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.12876E-17    0.870104E+02    0.266929E-15    0.000000E+00
+                                                      0.686501E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.62863E-18    0.288070E+02    0.916090E-17    0.000000E+00
+                                                     -0.148338E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.96988E-19    0.145195E+02    0.799738E-17    0.000000E+00
+                                                     -0.173240E-18    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.45431E-19    0.906676E+01    0.599673E-17    0.000000E+00
+                                                     -0.708968E-17    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17   0.35999E-19    0.642206E+01   -0.132898E-16    0.000000E+00
+                                                     -0.762369E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.13245E-19    0.491824E+01    0.771382E-17    0.000000E+00
+                                                     -0.110187E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17   0.94059E-20    0.395842E+01    0.399087E-17    0.000000E+00
+                                                      0.310369E-17    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17  -0.21970E-20    0.328997E+01   -0.522471E-18    0.000000E+00
+                                                     -0.357892E-17    0.357424E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357424E+01
+     1000.000   6.3520   0.99600E+17   0.24761E-19    0.279267E+01    0.117514E-17    0.000000E+00
+                                                      0.124204E-17    0.307000E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307000E+01
+
+                                                      0.196408E-04    Max error
+     Iteration number:        21
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.39115E-18    0.896899E+03   -0.138217E-14    0.000000E+00
+                                                     -0.156302E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17  -0.11643E-17    0.870104E+02    0.559505E-16    0.000000E+00
+                                                     -0.360287E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.61461E-18    0.288070E+02   -0.795600E-16    0.000000E+00
+                                                     -0.123838E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.14537E-18    0.145195E+02   -0.234301E-16    0.000000E+00
+                                                     -0.183121E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.90216E-19    0.906677E+01    0.178799E-17    0.000000E+00
+                                                     -0.654031E-18    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17  -0.37617E-19    0.642208E+01    0.339283E-17    0.000000E+00
+                                                      0.345965E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.34895E-19    0.491825E+01    0.172779E-17    0.000000E+00
+                                                      0.258190E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17   0.13814E-21    0.395844E+01    0.727866E-17    0.000000E+00
+                                                      0.188454E-19    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17  -0.11729E-20    0.328999E+01    0.512312E-18    0.000000E+00
+                                                     -0.125393E-17    0.357425E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357425E+01
+     1000.000   6.3520   0.99600E+17   0.13251E-20    0.279270E+01    0.986070E-18    0.000000E+00
+                                                      0.346434E-17    0.307000E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307000E+01
+
+                                                      0.107570E-04    Max error
+     Iteration number:        22
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.17332E-16    0.896899E+03   -0.975066E-15    0.000000E+00
+                                                     -0.112128E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17  -0.38246E-17    0.870104E+02   -0.851017E-16    0.000000E+00
+                                                      0.247580E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.23994E-18    0.288070E+02    0.892303E-16    0.000000E+00
+                                                      0.494372E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.29900E-20    0.145195E+02    0.114868E-16    0.000000E+00
+                                                     -0.199193E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.35095E-19    0.906677E+01   -0.115078E-16    0.000000E+00
+                                                      0.116965E-16    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17  -0.10136E-19    0.642209E+01    0.681772E-17    0.000000E+00
+                                                      0.626417E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17  -0.90386E-20    0.491826E+01    0.448355E-17    0.000000E+00
+                                                      0.617222E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17  -0.14511E-19    0.395845E+01    0.478382E-19    0.000000E+00
+                                                      0.104374E-17    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17   0.46091E-20    0.329001E+01   -0.703449E-17    0.000000E+00
+                                                     -0.131488E-17    0.357425E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357425E+01
+     1000.000   6.3520   0.99600E+17   0.12388E-19    0.279271E+01    0.119259E-17    0.000000E+00
+                                                     -0.364468E-17    0.307001E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307001E+01
+
+                                                      0.589177E-05    Max error
+     Iteration number:        23
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18   0.10257E-17    0.896899E+03    0.213333E-14    0.000000E+00
+                                                     -0.214529E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.51450E-18    0.870104E+02    0.263359E-15    0.000000E+00
+                                                      0.156698E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.55016E-18    0.288070E+02   -0.226382E-19    0.000000E+00
+                                                     -0.450153E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.73248E-19    0.145195E+02    0.294053E-16    0.000000E+00
+                                                      0.276061E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17  -0.11001E-19    0.906678E+01   -0.268516E-17    0.000000E+00
+                                                     -0.160763E-16    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17   0.39933E-19    0.642209E+01    0.327314E-17    0.000000E+00
+                                                     -0.258578E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.68759E-20    0.491827E+01   -0.565714E-17    0.000000E+00
+                                                      0.627871E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17   0.49007E-19    0.395846E+01   -0.317037E-17    0.000000E+00
+                                                      0.431704E-17    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17   0.15908E-19    0.329002E+01    0.696628E-18    0.000000E+00
+                                                      0.696628E-19    0.357425E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357425E+01
+     1000.000   6.3520   0.99600E+17   0.78102E-20    0.279272E+01   -0.137003E-17    0.000000E+00
+                                                     -0.119259E-18    0.307001E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307001E+01
+
+                                                      0.322712E-05    Max error
+     Iteration number:        24
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.37461E-16    0.896899E+03   -0.305054E-14    0.000000E+00
+                                                      0.353915E-14    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17  -0.12344E-17    0.870104E+02    0.145715E-15    0.000000E+00
+                                                      0.137614E-15    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17   0.21273E-19    0.288070E+02    0.352601E-16    0.000000E+00
+                                                      0.456037E-18    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17   0.31956E-19    0.145195E+02    0.140162E-16    0.000000E+00
+                                                     -0.715692E-18    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17   0.61818E-19    0.906678E+01    0.562893E-17    0.000000E+00
+                                                      0.108973E-16    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17   0.39295E-19    0.642209E+01   -0.765773E-18    0.000000E+00
+                                                     -0.720468E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.14409E-20    0.491827E+01    0.694012E-18    0.000000E+00
+                                                     -0.418726E-18    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17   0.17955E-19    0.395846E+01   -0.213677E-17    0.000000E+00
+                                                      0.176857E-18    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17  -0.11746E-20    0.329002E+01   -0.862077E-18    0.000000E+00
+                                                     -0.109429E-17    0.357425E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357425E+01
+     1000.000   6.3520   0.99600E+17  -0.30176E-20    0.279273E+01    0.160273E-17    0.000000E+00
+                                                     -0.132349E-17    0.307001E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307001E+01
+
+                                                      0.176765E-05    Max error
+     Iteration number:        25
+
+     =============================================================================================
+       Temp     Fermi   Hole density  Population SR                  Hole mobility 
+        [K]      [eV]     [cm^-3]      [h per cell]                    [cm^2/Vs]
+     =============================================================================================
+
+      100.000   5.7048   0.10000E+18  -0.10184E-16    0.896899E+03   -0.235046E-15    0.000000E+00
+                                                      0.694157E-15    0.102033E+04    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.102033E+04
+      200.000   5.7604   0.99999E+17   0.34510E-18    0.870104E+02   -0.779219E-16    0.000000E+00
+                                                      0.398610E-16    0.837257E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.837257E+02
+      300.000   5.8231   0.99999E+17  -0.21015E-18    0.288070E+02   -0.369066E-16    0.000000E+00
+                                                      0.146663E-16    0.268035E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.268035E+02
+      400.000   5.8904   0.99999E+17  -0.14223E-18    0.145195E+02   -0.213333E-16    0.000000E+00
+                                                      0.137806E-16    0.138941E+02    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.138941E+02
+      500.000   5.9612   0.99999E+17  -0.52235E-19    0.906678E+01   -0.298325E-17    0.000000E+00
+                                                     -0.961988E-17    0.899644E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.899644E+01
+      600.000   6.0349   0.99997E+17  -0.32736E-21    0.642209E+01   -0.186690E-18    0.000000E+00
+                                                     -0.409921E-17    0.657544E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.657544E+01
+      700.000   6.1111   0.99978E+17   0.17418E-19    0.491828E+01    0.169012E-17    0.000000E+00
+                                                      0.964735E-17    0.516268E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.516268E+01
+      800.000   6.1894   0.99926E+17   0.14835E-19    0.395847E+01   -0.109883E-17    0.000000E+00
+                                                      0.146849E-17    0.423629E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.423629E+01
+      900.000   6.2697   0.99811E+17   0.99113E-20    0.329003E+01   -0.217551E-17    0.000000E+00
+                                                      0.148904E-17    0.357425E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.357425E+01
+     1000.000   6.3520   0.99600E+17   0.58018E-20    0.279273E+01    0.724282E-18    0.000000E+00
+                                                      0.135257E-17    0.307001E+01    0.000000E+00
+                                                      0.000000E+00    0.000000E+00    0.307001E+01
+
+                                                      0.968249E-06    Max error
+
+     Unfolding on the coarse grid
+     elphon_wrap  :      0.01s CPU      0.42s WALL (       1 calls)
+
+     INITIALIZATION: 
+
+
+
+
+     Electron-Phonon interpolation
+     ephwann      :  70083.93s CPU  80656.38s WALL (       1 calls)
+     ep-interp    :  69407.84s CPU  79973.83s WALL (   63007 calls)
+
+     DynW2B       :    168.82s CPU    175.04s WALL (   63007 calls)
+     HamW2B       :   3712.54s CPU   3772.24s WALL ( 1764217 calls)
+     ephW2Bp      :  16376.05s CPU  16695.18s WALL (   63007 calls)
+     ephW2B       :    550.52s CPU    551.60s WALL (   20455 calls)
+     print_ibte   :  32957.44s CPU  43125.86s WALL (   63007 calls)
+     vmewan2bloch :    412.88s CPU    415.08s WALL (   40910 calls)
+     vmewan2bloch :    412.88s CPU    415.08s WALL (   40910 calls)
+     kpoint_paral :      6.45s CPU      6.64s WALL (       1 calls)
+
+
+     Total program execution
+     EPW          :     19h28m CPU     22h24m WALL
+
+     ===============================================================================
+     The functionality-dependent EPW.bib file was created with suggested citations. 
+     Please consider citing the papers listed in EPW.bib.                           
+     ===============================================================================
+                                                                                    

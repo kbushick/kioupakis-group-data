@@ -1,0 +1,46 @@
+ &control
+    calculation     = 'scf'
+    restart_mode    = 'from_scratch',
+    prefix          = 'GeO2',
+    tstress         = .true.
+    tprnfor         = .true.
+    pseudo_dir      = '.',
+    outdir          = '.'
+    wf_collect      = .true.
+    verbosity       = 'high'
+ /
+ &system
+    ibrav           =  0,
+    celldm(1)       =  1.88972613
+    nat             =  6,
+    ntyp            =  2,
+    ecutwfc         =  90,
+    nbnd            =  20
+    occupations     =  'fixed'
+ /
+ &electrons
+    diagonalization = 'cg'
+    mixing_mode     = 'plain'
+    mixing_beta     = 0.5
+    conv_thr        = 1.0d-12
+    diago_full_acc = .true.
+ /
+ &ions
+ /
+ATOMIC_SPECIES
+ Ge  72.63  Ge_LDA.cpi.UPF
+ O   15.999 o.cpi.UPF
+CELL_PARAMETERS (alat=  1.88972613)
+   2.978360956   0.000000000   0.000000000
+   0.000000000   4.515760391   0.000000000
+   0.000000000   0.000000000   4.515760391
+
+ATOMIC_POSITIONS (crystal)
+Ge       0.500000000   0.500000000   0.500000000
+Ge       0.000000000   0.000000000   0.000000000
+O        0.500000000   0.193955230   0.193955230
+O        0.500000000   0.806044755   0.806044755
+O        0.000000000   0.306044755   0.693955245
+O       -0.000000000   0.693955245   0.306044755
+K_POINTS automatic
+12 8 8 1 1 1

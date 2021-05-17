@@ -1,0 +1,11 @@
+phonons of GeO2
+ &inputph
+   outdir='.',
+   prefix='GeO2',
+   epsil=.true.,
+   ldisp=.true.,
+   nq1=6, nq2=4, nq3=4
+   fildyn='GeO2.dyn',
+   fildvscf='GeO2.dvscf'
+   tr2_ph=1.0d-15,
+ /

@@ -1,0 +1,123 @@
+--
+&inputepw
+  prefix      = 'GeO2',
+  amass(1)    = 72.63,
+  amass(2)    = 15.999,
+  outdir      = './'
+
+  lpolar      = .true.
+  lscreen     = .false. !.true.
+
+  elph        = .true.
+  kmaps       = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+  
+  scattering  = .true.
+  iterative_bte = .true.
+  mob_maxiter = 200
+  broyden_beta = 1.0 !default 0.7, 1.0 in example
+  scattering_serta = .false.
+  int_mob     = .false.
+  carrier     = .true.
+  ncarrier    = -1E17
+  mp_mesh_k   = .false. !cannot be true if using elecselfeng
+
+  eig_read   = .true.
+  fsthick     = 0.530 ! eV -- 5kbT_max + .1 for phonon absorption
+  efermi_read = .true.
+  fermi_energy  = 5.667368 ! -- VBM is 5.667368
+  degaussw    = 0.005 ! eV
+
+  nstemp      = 1
+  temps       = 300
+  !nstemp      = 10
+  !temps       = 100 1000 !this would get really expensive
+
+  restart     = .true.
+  restart_step = 500
+  selecqread = .true.
+  epmatkqread = .false.
+
+  nbndsub     =  24
+
+  lifc	      =	 .false.
+  asr_typ     =  'simple'
+  vme	      =	 .true.
+  use_ws      = .true.
+
+  elecselfen = .true.
+  phonselfen = .false.
+  a2f = .false.
+
+  iverbosity  = 3
+
+  dvscf_dir   = '../../epw_combined_GW/save'
+  
+  nkf1	      = 30
+  nkf2	      = 20
+  nkf3	      = 20
+  nqf1        = 30
+  nqf2        = 20
+  nqf3        = 20
+  
+  nk1         = 6
+  nk2         = 4
+  nk3         = 4
+  nq1         = 6
+  nq2         = 4
+  nq3         = 4
+
+  wannierize   = .false.
+  dis_win_max  =  100.0d0
+  dis_froz_max =  22.21d0
+  dis_win_min  =  -20.0d0
+  dis_froz_min =  -20.0d0
+  num_iter     =  2000
+  iprint       = 2
+  proj(1)      = 'Ge:s;p'
+  proj(2)      = 'O:s;p'
+  wdata(1)  =  'bands_plot = .true.'
+  wdata(2)  =  'write_bvec = .true.'
+  wdata(3)  =  'begin kpoint_path'
+  wdata(4)  =  'G 0.00000 0.00000 0.00000 Z 0.00000 0.00000 0.50000'
+  wdata(5)  =  'Z 0.00000 0.00000 0.50000 A 0.50000 0.50000 0.50000'
+  wdata(6)  =  'A 0.50000 0.50000 0.50000 M 0.50000 0.50000 0.00000'
+  wdata(7)  =  'M 0.50000 0.50000 0.00000 G 0.00000 0.00000 0.00000'
+  wdata(8)  =  'G 0.00000 0.00000 0.00000 X 0.00000 0.50000 0.00000'
+  wdata(9)  =  'end kpoint_path'
+  wdata(10)  = 'bands_plot_format = gnuplot'
+  wdata(11)  = 'dis_num_iter	     = 20000'
+  wdata(12)  = 'num_print_cycles  = 800'
+  wdata(13)  = 'dis_mix_ratio	     = 0.9'
+  wdata(14)  = 'use_ws_distance   = T'
+
+ /
+  24 cartesian
+   0.000000000   0.000000000   0.000000000   0.04166666667
+   0.000000000   0.000000000   0.055361662   0.04166666667
+   0.000000000   0.000000000  -0.110723324   0.04166666667
+   0.000000000   0.055361662   0.055361662   0.04166666667
+   0.000000000   0.055361662  -0.110723324   0.04166666667
+   0.000000000  -0.110723324  -0.110723324   0.04166666667
+   0.055959190   0.000000000   0.000000000   0.04166666667
+   0.055959190   0.000000000   0.055361662   0.04166666667
+   0.055959190   0.000000000  -0.110723324   0.04166666667
+   0.055959190   0.055361662   0.055361662   0.04166666667
+   0.055959190   0.055361662  -0.110723324   0.04166666667
+   0.055959190  -0.110723324  -0.110723324   0.04166666667
+   0.111918380   0.000000000   0.000000000   0.04166666667
+   0.111918380   0.000000000   0.055361662   0.04166666667
+   0.111918380   0.000000000  -0.110723324   0.04166666667
+   0.111918380   0.055361662   0.055361662   0.04166666667
+   0.111918380   0.055361662  -0.110723324   0.04166666667
+   0.111918380  -0.110723324  -0.110723324   0.04166666667
+  -0.167877570   0.000000000   0.000000000   0.04166666667
+  -0.167877570   0.000000000   0.055361662   0.04166666667
+  -0.167877570   0.000000000  -0.110723324   0.04166666667
+  -0.167877570   0.055361662   0.055361662   0.04166666667
+  -0.167877570   0.055361662  -0.110723324   0.04166666667
+  -0.167877570  -0.110723324  -0.110723324   0.04166666667
