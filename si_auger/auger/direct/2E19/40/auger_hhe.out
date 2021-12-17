@@ -1,0 +1,106 @@
+     Program DIRECT_AUGER_HHE starting on 23 Nov 2021 at  1: 9:47   
+
+     This program is part of Michigan Auger Code (MAC).
+
+        Version: 2.0
+        Compiled on: 23 Nov 2021
+        From branch: 'parallel_read_direct' with git hash: 47c98f
+        By: Kyle Bushick
+
+     We are running in parallel with  2720 processors.
+
+     Material Parameters
+     -------------------
+        prefix            =           Si
+        alat              =      10.1645 bohr
+        Vcell             =     262.5448 bohr^3
+        epsilon infty     =      11.7000
+        nbnd              =           34
+        ivbm              =            4
+        icbm              =            5
+        vbm_band_deg      =            3
+        cbm_band_deg      =            1
+        vbm_valley_deg    =            1
+        cbm_valley_deg    =            6
+        read CBM energy?  =            T
+        input CBM energy  =       6.4786
+        read VBM energy?  =            T
+        input VBM energy  =       5.2084
+        nphonon           =            6
+        valence electrons =       8.0000
+
+        crystal axes: (in units of alat)
+           -0.50000000,   0.00000000,  -0.50000000, 
+            0.00000000,   0.50000000,   0.50000000, 
+            0.50000000,   0.50000000,   0.00000000, 
+        cartesian axes: (in units of 2*pi/a)
+           -1.00000000,   1.00000000,  -1.00000000, 
+           -1.00000000,   1.00000000,   1.00000000, 
+            1.00000000,   1.00000000,  -1.00000000, 
+
+     Calculation Parameters
+     -------------------
+        calculation            =        auger
+        scratch dir            =            .
+        use_interp_eig?        =            T
+        verbosity level        =            0
+        temperature            =     300.0000 Kelvin
+        density                =   0.1000E+20 cm^-3
+        nkint_elec             =   40  40  40
+        nkint_hole             =   40  40  40
+        nq                     =    0   0   0
+
+     Auger Parameters
+     -------------------
+        screening model        =     combined
+        Egap_min               =       1.0802 eV
+        Egap_step              =       0.0100 eV
+        direct first run?      =            F
+        enforce energy cons?   =            T
+        delta func. cutoff     =   0.1000E-05
+        neta                   =            6
+        neta_im                =            6
+        eta values             =  0.020 0.050 0.100 0.200 0.300 0.500 (eV)
+        eta_im values          =  0.001 0.002 0.004 0.010 0.020 0.040 (eV)
+
+ electron grid is commensurate with hole grid
+ Will use interpolated eigenvalues, loops bounded by nwan!
+     Reading pre_direct data from supplied input file:
+        efermi electron:       0.0001
+
+
+        efermi hole:       0.0010
+
+
+        nkT cutoff electron:   7
+
+
+        nkT cutoff hole:   7
+
+
+ Screening model = combined
+ Lambda =    8.1859815685048340E-002
+ Lambda^2 =    6.7010294239900859E-003
+ BROADCASTING VARIABLES...
+ BROADCASTING ARRAYS...
+ Generating G min indices
+ Generating G min indices: DONE
+ Energy conservation occurs in a window    4.1520993071685552       eV wide
+ Reading combinations...
+ Done reading combinations...
+ File size is read as 683879904 bytes and proc 0 has 7858 combinations
+ PROC ZERO ON:         1000 OF:                  7858
+ PROC ZERO ON:         2000 OF:                  7858
+ PROC ZERO ON:         3000 OF:                  7858
+ PROC ZERO ON:         4000 OF:                  7858
+ PROC ZERO ON:         5000 OF:                  7858
+ PROC ZERO ON:         6000 OF:                  7858
+ PROC ZERO ON:         7000 OF:                  7858
+ Done with calc loop
+======================================================================
+======================================================================
+     Program DIRECT_AUGER_HHE ending on 23 Nov 2021 at  1:27:27   
+     Elapsed time:  0:17:39:565 hr
+     JOB FINISHED.
+======================================================================
+======================================================================

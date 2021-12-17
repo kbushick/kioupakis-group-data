@@ -1,0 +1,104 @@
+     Program INDIRECT_AUGER_EEH starting on 15 Oct 2021 at 10:23:47   
+
+     This program is part of Michigan Auger Code (MAC).
+
+        Version: 2.0
+        Compiled on: 15 Oct 2021
+        From branch: 'parallel_read_direct' with git hash: 47c98f
+        By: Kyle Bushick
+
+     We are running in parallel with  1553 processors.
+
+     Material Parameters
+     -------------------
+        prefix            =           Si
+        alat              =      10.1645 bohr
+        Vcell             =     262.5448 bohr^3
+        epsilon infty     =      11.7000
+        nbnd              =           34
+        ivbm              =            4
+        icbm              =            5
+        vbm_band_deg      =            3
+        cbm_band_deg      =            1
+        vbm_valley_deg    =            1
+        cbm_valley_deg    =            6
+        read CBM energy?  =            T
+        input CBM energy  =       6.4786
+        read VBM energy?  =            T
+        input VBM energy  =       5.2084
+        nphonon           =            6
+        valence electrons =       8.0000
+
+        crystal axes: (in units of alat)
+           -0.50000000,   0.00000000,  -0.50000000, 
+            0.00000000,   0.50000000,   0.50000000, 
+            0.50000000,   0.50000000,   0.00000000, 
+        cartesian axes: (in units of 2*pi/a)
+           -1.00000000,   1.00000000,  -1.00000000, 
+           -1.00000000,   1.00000000,   1.00000000, 
+            1.00000000,   1.00000000,  -1.00000000, 
+
+     Calculation Parameters
+     -------------------
+        calculation            = indirect_aug
+        scratch dir            =            .
+        use_interp_eig?        =            T
+        verbosity level        =            0
+        temperature            =     100.0000 Kelvin
+        density                =   0.1000E+20 cm^-3
+        nkint_elec             =    0   0   0
+        nkint_hole             =    0   0   0
+        nq                     =   50  50  50
+
+     Wannier Parameters
+     -------------------
+        nwan                   =           26
+        wannier grid           =    8   8   8
+        wannier bands          =           34
+
+     Auger Parameters
+     -------------------
+        screening model        =     combined
+        Egap_min               =       1.0802 eV
+        Egap_step              =       0.0100 eV
+        direct first run?      =            F
+        enforce energy cons?   =            T
+        delta func. cutoff     =   0.1000E-05
+        neta                   =            5
+        neta_im                =            6
+        eta values             =  0.020 0.050 0.100 0.200 0.300 (eV)
+        eta_im values          =  0.001 0.002 0.004 0.010 0.020 0.040 (eV)
+
+ qweights.dat present, assuming irreducible wedge for q points
+ Irreducible wedge has         3107 qpoints
+ Screening model = combined
+ Lambda =    3.1704170287180089E-002
+ Lambda^2 =    1.0051544135985127E-003
+ BROADCASTING VARIABLES...
+ Energy conservation occurs in a window    2.5278986413477917       eV wide
+ Generating G min indices
+ Generating G min indices: DONE
+ rank 0: now working on iq =            2
+ Reading interpolated eigenvalues from: ./phonon_2/eeh_interpolated_points.eig
+rank 0: q point progress: 10/36
+rank 0: q point progress: 20/36
+rank 0: q point progress: 30/36
+ rank 0: now working on iq =            3
+ Reading interpolated eigenvalues from: ./phonon_3/eeh_interpolated_points.eig
+rank 0: q point progress: 10/36
+rank 0: q point progress: 20/36
+rank 0: q point progress: 30/36
+ Completed calculation loop, reducing sum
+ Completed reduction operation
+Writing data to output files for eta 1
+Writing data to output files for eta 2
+Writing data to output files for eta 3
+Writing data to output files for eta 4
+Writing data to output files for eta 5
+======================================================================
+======================================================================
+     Program INDIRECT_AUGER_EEH ending on 15 Oct 2021 at 11:37:23   
+     Elapsed time:  1:13:35:314 hr
+     JOB FINISHED.
+======================================================================
+======================================================================

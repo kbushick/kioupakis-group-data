@@ -1,0 +1,15 @@
+phonons for Si
+&inputph
+  outdir = '.'
+  prefix = 'Si'
+  trans  = .false.
+  epsil  = .false.
+  ldisp  = .false.
+  qplot  = .true. 
+  electron_phonon = 'yambo'
+  fildyn = 'Si.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph = 1.0d-15
+/
+1
+-0.020000000000000000 0.020000000000000000 -0.020000000000000000 1.000000000000000000

@@ -1,0 +1,10 @@
+&inputpp
+outdir = './'
+prefix = 'Si'
+seedname = 'Si'
+spin_component = 'none'
+write_mmn = .false.
+write_amn = .false.
+write_unk = .true.
+reduce_unk = .false.
+/

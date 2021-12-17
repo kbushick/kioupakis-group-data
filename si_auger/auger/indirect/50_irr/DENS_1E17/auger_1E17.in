@@ -1,0 +1,68 @@
+&CONTROL
+prefix='Si'
+calculation='indirect_auger'
+use_interp_eig=.true.
+density_e=1E17
+density_h=1E17
+temperature=300
+read_efermi=.false.
+efermi_elec=0
+efermi_hole=0
+nkt_cut_elec=0
+nkt_cut_hole=0
+nkint_elec(:) = 0, 0, 0
+nkint_hole(:) = 0, 0, 0
+nq(:) = 50, 50, 50
+scratch_dir='.'
+pre_direct_dir='./pre_direct' !this may need to be changed
+verbosity=0
+/
+&MATERIAL
+alat=10.164541897,
+Vcell=262.5448,
+nbnd=34,
+ivbm=4,
+icbm=5,
+read_cbm=.true.
+cbm_energy=6.4785954
+read_vbm=.true.
+vbm_energy=5.208408
+vbm_band_deg=3
+cbm_band_deg=1
+vbm_valley_deg=1
+cbm_valley_deg=6
+valence_electrons=8
+nphonon=6
+epsilon_infty=11.7
+a(:,1) = -0.500000,  0.000000,  0.500000,
+a(:,2) =  0.000000,  0.500000,  0.500000,
+a(:,3) = -0.500000,  0.500000,  0.000000,
+b(:,1) = -1.000000, -1.000000,  1.000000,
+b(:,2) =  1.000000,  1.000000,  1.000000,
+b(:,3) = -1.000000,  1.000000, -1.000000,
+/
+/
+&PRE_DIRECT
+density_conv_thr = 1.0E-2
+nkt_thr = 20
+/
+&WANNIER
+nwan=26
+nwanband=34
+nkwan1=8
+nkwan2=8
+nkwan3=8
+/
+&AUGER
+ngap=11
+Egap_min=1.0801874
+Egap_step=0.01
+screening_model='combined'
+direct_first_run=.false.
+neta = 5
+eta =  0.02 0.05 0.1 0.2 0.3
+neta_im = 6
+eta_im = 0.001 0.002 0.004 0.01 0.02 0.04
+enforce_energy_conservation = .true.
+cutoff_accuracy = 1e-6
+/

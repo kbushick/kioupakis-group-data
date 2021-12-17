@@ -1,0 +1,132 @@
+     Program DIRECT_AUGER_EEH starting on 15 Oct 2021 at  7: 6:21   
+
+     This program is part of Michigan Auger Code (MAC).
+
+        Version: 2.0
+        Compiled on: 15 Oct 2021
+        From branch: 'parallel_read_direct' with git hash: 47c98f
+        By: Kyle Bushick
+
+     We are running in parallel with  3400 processors.
+
+     Material Parameters
+     -------------------
+        prefix            =           Si
+        alat              =      10.1645 bohr
+        Vcell             =     262.5448 bohr^3
+        epsilon infty     =      11.7000
+        nbnd              =           34
+        ivbm              =            4
+        icbm              =            5
+        vbm_band_deg      =            3
+        cbm_band_deg      =            1
+        vbm_valley_deg    =            1
+        cbm_valley_deg    =            6
+        read CBM energy?  =            T
+        input CBM energy  =       6.4786
+        read VBM energy?  =            T
+        input VBM energy  =       5.2084
+        nphonon           =            6
+        valence electrons =       8.0000
+
+        crystal axes: (in units of alat)
+           -0.50000000,   0.00000000,  -0.50000000, 
+            0.00000000,   0.50000000,   0.50000000, 
+            0.50000000,   0.50000000,   0.00000000, 
+        cartesian axes: (in units of 2*pi/a)
+           -1.00000000,   1.00000000,  -1.00000000, 
+           -1.00000000,   1.00000000,   1.00000000, 
+            1.00000000,   1.00000000,  -1.00000000, 
+
+     Calculation Parameters
+     -------------------
+        calculation            =        auger
+        scratch dir            =            .
+        use_interp_eig?        =            T
+        verbosity level        =            0
+        temperature            =     300.0000 Kelvin
+        density                =   0.1000E+20 cm^-3
+        nkint_elec             =   50  50  50
+        nkint_hole             =   50  50  50
+        nq                     =    0   0   0
+
+     Auger Parameters
+     -------------------
+        screening model        =     combined
+        Egap_min               =       1.0802 eV
+        Egap_step              =       0.0100 eV
+        direct first run?      =            F
+        enforce energy cons?   =            T
+        delta func. cutoff     =   0.1000E-05
+        neta                   =            6
+        neta_im                =            6
+        eta values             =  0.020 0.050 0.100 0.200 0.300 0.500 (eV)
+        eta_im values          =  0.001 0.002 0.004 0.010 0.020 0.040 (eV)
+
+ electron grid is commensurate with hole grid
+ Will use interpolated eigenvalues, loops bounded by nwan!
+     Reading pre_direct data from supplied input file:
+        efermi electron:      -0.0023
+
+
+        efermi hole:       0.0033
+
+
+        nkT cutoff electron:   9
+
+
+        nkT cutoff hole:   9
+
+
+ Screening model = combined
+ Lambda =    2.5886346640632944E-002
+ Lambda^2 =    6.7010294239900855E-004
+ BROADCASTING VARIABLES...
+ BROADCASTING ARRAYS...
+ Generating G min indices
+ Generating G min indices: DONE
+ Energy conservation occurs in a window    4.1520993071685552       eV wide
+ Reading combinations...
+ Done reading combinations...
+ File size is read as 3610419136 bytes and proc 0 has 33184 combinations
+ PROC ZERO ON:         1000 OF:                 33184
+ PROC ZERO ON:         2000 OF:                 33184
+ PROC ZERO ON:         3000 OF:                 33184
+ PROC ZERO ON:         4000 OF:                 33184
+ PROC ZERO ON:         5000 OF:                 33184
+ PROC ZERO ON:         6000 OF:                 33184
+ PROC ZERO ON:         7000 OF:                 33184
+ PROC ZERO ON:         8000 OF:                 33184
+ PROC ZERO ON:         9000 OF:                 33184
+ PROC ZERO ON:        10000 OF:                 33184
+ PROC ZERO ON:        11000 OF:                 33184
+ PROC ZERO ON:        12000 OF:                 33184
+ PROC ZERO ON:        13000 OF:                 33184
+ PROC ZERO ON:        14000 OF:                 33184
+ PROC ZERO ON:        15000 OF:                 33184
+ PROC ZERO ON:        16000 OF:                 33184
+ PROC ZERO ON:        17000 OF:                 33184
+ PROC ZERO ON:        18000 OF:                 33184
+ PROC ZERO ON:        19000 OF:                 33184
+ PROC ZERO ON:        20000 OF:                 33184
+ PROC ZERO ON:        21000 OF:                 33184
+ PROC ZERO ON:        22000 OF:                 33184
+ PROC ZERO ON:        23000 OF:                 33184
+ PROC ZERO ON:        24000 OF:                 33184
+ PROC ZERO ON:        25000 OF:                 33184
+ PROC ZERO ON:        26000 OF:                 33184
+ PROC ZERO ON:        27000 OF:                 33184
+ PROC ZERO ON:        28000 OF:                 33184
+ PROC ZERO ON:        29000 OF:                 33184
+ PROC ZERO ON:        30000 OF:                 33184
+ PROC ZERO ON:        31000 OF:                 33184
+ PROC ZERO ON:        32000 OF:                 33184
+ PROC ZERO ON:        33000 OF:                 33184
+ Done with calc loop
+======================================================================
+======================================================================
+     Program DIRECT_AUGER_EEH ending on 15 Oct 2021 at  8: 2:32   
+     Elapsed time:  0:56:11:385 hr
+     JOB FINISHED.
+======================================================================
+======================================================================

@@ -1,0 +1,235 @@
+     Program DIRECT_AUGER_EEH starting on  5 Dec 2021 at  1:29:29   
+
+     This program is part of Michigan Auger Code (MAC).
+
+        Version: 2.0
+        Compiled on:  5 Dec 2021
+        From branch: 'parallel_read_direct' with git hash: 47c98f
+        By: Kyle Bushick
+
+     We are running in parallel with  2720 processors.
+
+     Material Parameters
+     -------------------
+        prefix            =           Si
+        alat              =      10.1645 bohr
+        Vcell             =     262.5448 bohr^3
+        epsilon infty     =      11.7000
+        nbnd              =           34
+        ivbm              =            4
+        icbm              =            5
+        vbm_band_deg      =            3
+        cbm_band_deg      =            1
+        vbm_valley_deg    =            1
+        cbm_valley_deg    =            6
+        read CBM energy?  =            T
+        input CBM energy  =       6.4786
+        read VBM energy?  =            T
+        input VBM energy  =       5.2084
+        nphonon           =            6
+        valence electrons =       8.0000
+
+        crystal axes: (in units of alat)
+           -0.50000000,   0.00000000,  -0.50000000, 
+            0.00000000,   0.50000000,   0.50000000, 
+            0.50000000,   0.50000000,   0.00000000, 
+        cartesian axes: (in units of 2*pi/a)
+           -1.00000000,   1.00000000,  -1.00000000, 
+           -1.00000000,   1.00000000,   1.00000000, 
+            1.00000000,   1.00000000,  -1.00000000, 
+
+     Calculation Parameters
+     -------------------
+        calculation            =        auger
+        scratch dir            =            .
+        use_interp_eig?        =            T
+        verbosity level        =            0
+        temperature            =     300.0000 Kelvin
+        density                =   0.1000E+20 cm^-3
+        nkint_elec             =   50  50  50
+        nkint_hole             =   50  50  50
+        nq                     =    0   0   0
+
+     Auger Parameters
+     -------------------
+        screening model        =     combined
+        Egap_min               =       1.0802 eV
+        Egap_step              =       0.0100 eV
+        direct first run?      =            F
+        enforce energy cons?   =            T
+        delta func. cutoff     =   0.1000E-05
+        neta                   =            6
+        neta_im                =            6
+        eta values             =  0.020 0.050 0.100 0.200 0.300 0.500 (eV)
+        eta_im values          =  0.001 0.002 0.004 0.010 0.020 0.040 (eV)
+
+ electron grid is commensurate with hole grid
+ Will use interpolated eigenvalues, loops bounded by nwan!
+     Reading pre_direct data from supplied input file:
+        efermi electron:       0.0024
+
+
+        efermi hole:      -0.0011
+
+
+        nkT cutoff electron:   6
+
+
+        nkT cutoff hole:   5
+
+
+ Screening model = combined
+ Lambda =   0.16348608026092742     
+ Lambda^2 =    2.6727698439082404E-002
+ BROADCASTING VARIABLES...
+ BROADCASTING ARRAYS...
+ Generating G min indices
+ Generating G min indices: DONE
+ Energy conservation occurs in a window    4.1520993071685552       eV wide
+ Reading combinations...
+ Done reading combinations...
+ File size is read as 11905049088 bytes and proc 0 has 136777 combinations
+ PROC ZERO ON:         1000 OF:                136777
+ PROC ZERO ON:         2000 OF:                136777
+ PROC ZERO ON:         3000 OF:                136777
+ PROC ZERO ON:         4000 OF:                136777
+ PROC ZERO ON:         5000 OF:                136777
+ PROC ZERO ON:         6000 OF:                136777
+ PROC ZERO ON:         7000 OF:                136777
+ PROC ZERO ON:         8000 OF:                136777
+ PROC ZERO ON:         9000 OF:                136777
+ PROC ZERO ON:        10000 OF:                136777
+ PROC ZERO ON:        11000 OF:                136777
+ PROC ZERO ON:        12000 OF:                136777
+ PROC ZERO ON:        13000 OF:                136777
+ PROC ZERO ON:        14000 OF:                136777
+ PROC ZERO ON:        15000 OF:                136777
+ PROC ZERO ON:        16000 OF:                136777
+ PROC ZERO ON:        17000 OF:                136777
+ PROC ZERO ON:        18000 OF:                136777
+ PROC ZERO ON:        19000 OF:                136777
+ PROC ZERO ON:        20000 OF:                136777
+ PROC ZERO ON:        21000 OF:                136777
+ PROC ZERO ON:        22000 OF:                136777
+ PROC ZERO ON:        23000 OF:                136777
+ PROC ZERO ON:        24000 OF:                136777
+ PROC ZERO ON:        25000 OF:                136777
+ PROC ZERO ON:        26000 OF:                136777
+ PROC ZERO ON:        27000 OF:                136777
+ PROC ZERO ON:        28000 OF:                136777
+ PROC ZERO ON:        29000 OF:                136777
+ PROC ZERO ON:        30000 OF:                136777
+ PROC ZERO ON:        31000 OF:                136777
+ PROC ZERO ON:        32000 OF:                136777
+ PROC ZERO ON:        33000 OF:                136777
+ PROC ZERO ON:        34000 OF:                136777
+ PROC ZERO ON:        35000 OF:                136777
+ PROC ZERO ON:        36000 OF:                136777
+ PROC ZERO ON:        37000 OF:                136777
+ PROC ZERO ON:        38000 OF:                136777
+ PROC ZERO ON:        39000 OF:                136777
+ PROC ZERO ON:        40000 OF:                136777
+ PROC ZERO ON:        41000 OF:                136777
+ PROC ZERO ON:        42000 OF:                136777
+ PROC ZERO ON:        43000 OF:                136777
+ PROC ZERO ON:        44000 OF:                136777
+ PROC ZERO ON:        45000 OF:                136777
+ PROC ZERO ON:        46000 OF:                136777
+ PROC ZERO ON:        47000 OF:                136777
+ PROC ZERO ON:        48000 OF:                136777
+ PROC ZERO ON:        49000 OF:                136777
+ PROC ZERO ON:        50000 OF:                136777
+ PROC ZERO ON:        51000 OF:                136777
+ PROC ZERO ON:        52000 OF:                136777
+ PROC ZERO ON:        53000 OF:                136777
+ PROC ZERO ON:        54000 OF:                136777
+ PROC ZERO ON:        55000 OF:                136777
+ PROC ZERO ON:        56000 OF:                136777
+ PROC ZERO ON:        57000 OF:                136777
+ PROC ZERO ON:        58000 OF:                136777
+ PROC ZERO ON:        59000 OF:                136777
+ PROC ZERO ON:        60000 OF:                136777
+ PROC ZERO ON:        61000 OF:                136777
+ PROC ZERO ON:        62000 OF:                136777
+ PROC ZERO ON:        63000 OF:                136777
+ PROC ZERO ON:        64000 OF:                136777
+ PROC ZERO ON:        65000 OF:                136777
+ PROC ZERO ON:        66000 OF:                136777
+ PROC ZERO ON:        67000 OF:                136777
+ PROC ZERO ON:        68000 OF:                136777
+ PROC ZERO ON:        69000 OF:                136777
+ PROC ZERO ON:        70000 OF:                136777
+ PROC ZERO ON:        71000 OF:                136777
+ PROC ZERO ON:        72000 OF:                136777
+ PROC ZERO ON:        73000 OF:                136777
+ PROC ZERO ON:        74000 OF:                136777
+ PROC ZERO ON:        75000 OF:                136777
+ PROC ZERO ON:        76000 OF:                136777
+ PROC ZERO ON:        77000 OF:                136777
+ PROC ZERO ON:        78000 OF:                136777
+ PROC ZERO ON:        79000 OF:                136777
+ PROC ZERO ON:        80000 OF:                136777
+ PROC ZERO ON:        81000 OF:                136777
+ PROC ZERO ON:        82000 OF:                136777
+ PROC ZERO ON:        83000 OF:                136777
+ PROC ZERO ON:        84000 OF:                136777
+ PROC ZERO ON:        85000 OF:                136777
+ PROC ZERO ON:        86000 OF:                136777
+ PROC ZERO ON:        87000 OF:                136777
+ PROC ZERO ON:        88000 OF:                136777
+ PROC ZERO ON:        89000 OF:                136777
+ PROC ZERO ON:        90000 OF:                136777
+ PROC ZERO ON:        91000 OF:                136777
+ PROC ZERO ON:        92000 OF:                136777
+ PROC ZERO ON:        93000 OF:                136777
+ PROC ZERO ON:        94000 OF:                136777
+ PROC ZERO ON:        95000 OF:                136777
+ PROC ZERO ON:        96000 OF:                136777
+ PROC ZERO ON:        97000 OF:                136777
+ PROC ZERO ON:        98000 OF:                136777
+ PROC ZERO ON:        99000 OF:                136777
+ PROC ZERO ON:       100000 OF:                136777
+ PROC ZERO ON:       101000 OF:                136777
+ PROC ZERO ON:       102000 OF:                136777
+ PROC ZERO ON:       103000 OF:                136777
+ PROC ZERO ON:       104000 OF:                136777
+ PROC ZERO ON:       105000 OF:                136777
+ PROC ZERO ON:       106000 OF:                136777
+ PROC ZERO ON:       107000 OF:                136777
+ PROC ZERO ON:       108000 OF:                136777
+ PROC ZERO ON:       109000 OF:                136777
+ PROC ZERO ON:       110000 OF:                136777
+ PROC ZERO ON:       111000 OF:                136777
+ PROC ZERO ON:       112000 OF:                136777
+ PROC ZERO ON:       113000 OF:                136777
+ PROC ZERO ON:       114000 OF:                136777
+ PROC ZERO ON:       115000 OF:                136777
+ PROC ZERO ON:       116000 OF:                136777
+ PROC ZERO ON:       117000 OF:                136777
+ PROC ZERO ON:       118000 OF:                136777
+ PROC ZERO ON:       119000 OF:                136777
+ PROC ZERO ON:       120000 OF:                136777
+ PROC ZERO ON:       121000 OF:                136777
+ PROC ZERO ON:       122000 OF:                136777
+ PROC ZERO ON:       123000 OF:                136777
+ PROC ZERO ON:       124000 OF:                136777
+ PROC ZERO ON:       125000 OF:                136777
+ PROC ZERO ON:       126000 OF:                136777
+ PROC ZERO ON:       127000 OF:                136777
+ PROC ZERO ON:       128000 OF:                136777
+ PROC ZERO ON:       129000 OF:                136777
+ PROC ZERO ON:       130000 OF:                136777
+ PROC ZERO ON:       131000 OF:                136777
+ PROC ZERO ON:       132000 OF:                136777
+ PROC ZERO ON:       133000 OF:                136777
+ PROC ZERO ON:       134000 OF:                136777
+ PROC ZERO ON:       135000 OF:                136777
+ PROC ZERO ON:       136000 OF:                136777
+ Done with calc loop
+======================================================================
+======================================================================
+     Program DIRECT_AUGER_EEH ending on  5 Dec 2021 at  6:13:49   
+     Elapsed time:  4:44:19:593 hr
+     JOB FINISHED.
+======================================================================
+======================================================================

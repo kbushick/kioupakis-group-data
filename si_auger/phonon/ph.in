@@ -1,0 +1,16 @@
+phonons for Si
+&inputph
+  outdir = '.'
+  prefix = 'Si'
+  epsil  = .false.
+  ldisp  = .true.
+  nq1 = 8
+  nq2 = 8
+  nq3 = 8
+  trans  = .true.
+  qplot  = .false. 
+  electron_phonon = 'dvscf'
+  fildyn = 'Si.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph = 1.0d-15
+/
