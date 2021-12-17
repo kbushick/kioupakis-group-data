@@ -36,6 +36,8 @@ f=0.250,-0.250,-0.250:s
 f=-0.250,0.250,-0.250:s
 f=-0.250,-0.250,0.250:s
 End Projections
+ 
+write_u_matrices = .true.
 
 bands_plot = .true.
 begin kpoint_path
